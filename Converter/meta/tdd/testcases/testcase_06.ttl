@@ -1,0 +1,427 @@
+@prefix ns1: <http://purl.org/spar/pro/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://purl.org/spar/datacite/> .
+@prefix ns4: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/vocab/frbr/core#> .
+@prefix ns7: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/oc/meta/br/0601> a <http://purl.org/spar/fabio/Book>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title1" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/0601>,
+        <https://w3id.org/oc/meta/ar/0602> .
+
+<https://w3id.org/oc/meta/br/06010> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Thesis> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title10" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06019>,
+        <https://w3id.org/oc/meta/ar/06020> .
+
+<https://w3id.org/oc/meta/br/06011> a <http://purl.org/spar/fabio/Book>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title11" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06021>,
+        <https://w3id.org/oc/meta/ar/06022> .
+
+<https://w3id.org/oc/meta/br/06012> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Journal> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title12" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06023>,
+        <https://w3id.org/oc/meta/ar/06024> .
+
+<https://w3id.org/oc/meta/br/06013> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/JournalArticle> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title13" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06025>,
+        <https://w3id.org/oc/meta/ar/06026> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06027> .
+
+<https://w3id.org/oc/meta/br/06014> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/JournalIssue> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title14" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06027>,
+        <https://w3id.org/oc/meta/ar/06028> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06028> .
+
+<https://w3id.org/oc/meta/br/06015> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/JournalVolume> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title15" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06029>,
+        <https://w3id.org/oc/meta/ar/06030> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06029> .
+
+<https://w3id.org/oc/meta/br/06016> a <http://purl.org/spar/fabio/Book>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title16" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06031>,
+        <https://w3id.org/oc/meta/ar/06032> .
+
+<https://w3id.org/oc/meta/br/06017> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/ProceedingsPaper> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title17" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06033>,
+        <https://w3id.org/oc/meta/ar/06034> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06030> .
+
+<https://w3id.org/oc/meta/br/06018> a <http://purl.org/spar/fabio/AcademicProceedings>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title18" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06035>,
+        <https://w3id.org/oc/meta/ar/06036> .
+
+<https://w3id.org/oc/meta/br/06019> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/ReferenceBook> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title19" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06037>,
+        <https://w3id.org/oc/meta/ar/06038> .
+
+<https://w3id.org/oc/meta/br/0602> a <http://purl.org/spar/fabio/BookChapter>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title2" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/0603>,
+        <https://w3id.org/oc/meta/ar/0604> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06025> .
+
+<https://w3id.org/oc/meta/br/06020> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/ReferenceEntry> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title20" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06039>,
+        <https://w3id.org/oc/meta/ar/06040> .
+
+<https://w3id.org/oc/meta/br/06021> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Series> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title21" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06041>,
+        <https://w3id.org/oc/meta/ar/06042> .
+
+<https://w3id.org/oc/meta/br/06022> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/ReportDocument> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title22" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06043>,
+        <https://w3id.org/oc/meta/ar/06044> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06031> .
+
+<https://w3id.org/oc/meta/br/06023> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/SpecificationDocument> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title23" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06045>,
+        <https://w3id.org/oc/meta/ar/06046> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06032> .
+
+<https://w3id.org/oc/meta/br/06024> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Series> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title24" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06047>,
+        <https://w3id.org/oc/meta/ar/06048> .
+
+<https://w3id.org/oc/meta/br/0603> a <http://purl.org/spar/doco/Part>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title3" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/0605>,
+        <https://w3id.org/oc/meta/ar/0606> ;
+    ns6:partOf <https://w3id.org/oc/meta/br/06026> .
+
+<https://w3id.org/oc/meta/br/0604> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/ExpressionCollection> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title4" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/0607>,
+        <https://w3id.org/oc/meta/ar/0608> .
+
+<https://w3id.org/oc/meta/br/0605> a <http://purl.org/spar/fabio/BookSeries>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title5" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06010>,
+        <https://w3id.org/oc/meta/ar/0609> .
+
+<https://w3id.org/oc/meta/br/0606> a <http://purl.org/spar/fabio/BookSet>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title6" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06011>,
+        <https://w3id.org/oc/meta/ar/06012> .
+
+<https://w3id.org/oc/meta/br/0607> a <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title7" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06013>,
+        <https://w3id.org/oc/meta/ar/06014> .
+
+<https://w3id.org/oc/meta/br/0608> a <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title8" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06015>,
+        <https://w3id.org/oc/meta/ar/06016> .
+
+<https://w3id.org/oc/meta/br/0609> a <http://purl.org/spar/fabio/DataFile>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns4:publicationDate "1995"^^xsd:gYear ;
+    ns2:title "Title9" ;
+    ns1:isDocumentContextFor <https://w3id.org/oc/meta/ar/06017>,
+        <https://w3id.org/oc/meta/ar/06018> .
+
+<https://w3id.org/oc/meta/ar/0601> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06010> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06011> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06012> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06013> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06014> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06015> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06016> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06017> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06018> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06019> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/0602> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06020> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06021> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06022> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06023> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06024> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06025> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06026> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06027> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06028> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06029> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/0603> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06030> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06031> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06032> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06033> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06034> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06035> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06036> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06037> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06038> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06039> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/0604> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06040> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06041> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06042> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06043> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06044> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06045> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06046> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/06047> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/06048> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/0605> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/0606> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/0607> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/ar/0608> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns1:withRole ns1:publisher .
+
+<https://w3id.org/oc/meta/ar/0609> a ns1:RoleInTime ;
+    ns1:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns1:withRole ns1:author .
+
+<https://w3id.org/oc/meta/br/06025> a <http://purl.org/spar/fabio/Book>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns2:title "Venue2" .
+
+<https://w3id.org/oc/meta/br/06026> a <http://purl.org/spar/fabio/Book>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns2:title "Venue3" .
+
+<https://w3id.org/oc/meta/br/06027> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Journal> ;
+    ns2:title "Venue13" .
+
+<https://w3id.org/oc/meta/br/06028> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Journal> ;
+    ns2:title "Venue14" .
+
+<https://w3id.org/oc/meta/br/06029> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Journal> ;
+    ns2:title "Venue15" .
+
+<https://w3id.org/oc/meta/br/06030> a <http://purl.org/spar/fabio/AcademicProceedings>,
+        <http://purl.org/spar/fabio/Expression> ;
+    ns2:title "Venue17" .
+
+<https://w3id.org/oc/meta/br/06031> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Series> ;
+    ns2:title "Venue22" .
+
+<https://w3id.org/oc/meta/br/06032> a <http://purl.org/spar/fabio/Expression>,
+        <http://purl.org/spar/fabio/Series> ;
+    ns2:title "Venue23" .
+
+<https://w3id.org/oc/meta/id/0601> a ns3:Identifier ;
+    ns3:usesIdentifierScheme ns3:viaf ;
+    ns7:hasLiteralValue "111" .
+
+<https://w3id.org/oc/meta/id/0602> a ns3:Identifier ;
+    ns3:usesIdentifierScheme ns3:viaf ;
+    ns7:hasLiteralValue "222" .
+
+<https://w3id.org/oc/meta/ra/0601> a ns5:Agent ;
+    ns3:hasIdentifier <https://w3id.org/oc/meta/id/0601> ;
+    ns5:familyName "Surname1" ;
+    ns5:givenName "Name1" .
+
+<https://w3id.org/oc/meta/ra/0602> a ns5:Agent ;
+    ns3:hasIdentifier <https://w3id.org/oc/meta/id/0602> ;
+    ns5:name "Pubx" .
+

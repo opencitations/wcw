@@ -1,0 +1,112 @@
+<https://w3id.org/oc/meta/ra/0601> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06024> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06015> <http://xmlns.com/foaf/0.1/familyName> "Callahan" .
+<https://w3id.org/oc/meta/ra/06028> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06045> .
+<https://w3id.org/oc/meta/ra/06032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06015> <http://xmlns.com/foaf/0.1/givenName> "Alison" .
+<https://w3id.org/oc/meta/ra/06016> <http://xmlns.com/foaf/0.1/givenName> "Alexander" .
+<https://w3id.org/oc/meta/ra/06027> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06024> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06019> <http://xmlns.com/foaf/0.1/givenName> "Pascal" .
+<https://w3id.org/oc/meta/ra/06024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0605> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06016> <http://xmlns.com/foaf/0.1/familyName> "Gawronski" .
+<https://w3id.org/oc/meta/ra/06012> <http://xmlns.com/foaf/0.1/givenName> "Tobias" .
+<https://w3id.org/oc/meta/ra/0603> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06036> .
+<https://w3id.org/oc/meta/ra/06012> <http://xmlns.com/foaf/0.1/familyName> "Kuhn" .
+<https://w3id.org/oc/meta/ra/0602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0609> <http://xmlns.com/foaf/0.1/name> "Informa Uk Limited" .
+<https://w3id.org/oc/meta/ra/06010> <http://xmlns.com/foaf/0.1/familyName> "Kuhn" .
+<https://w3id.org/oc/meta/ra/0601> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06011> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06041> .
+<https://w3id.org/oc/meta/ra/06026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06018> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06021> <http://xmlns.com/foaf/0.1/givenName> "Pascal" .
+<https://w3id.org/oc/meta/ra/06029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0606> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06038> .
+<https://w3id.org/oc/meta/ra/06017> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06043> .
+<https://w3id.org/oc/meta/ra/06016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06019> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06013> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0609> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06039> .
+<https://w3id.org/oc/meta/ra/0608> <http://xmlns.com/foaf/0.1/givenName> "Kathryn" .
+<https://w3id.org/oc/meta/ra/06033> <http://xmlns.com/foaf/0.1/givenName> "Stephen K" .
+<https://w3id.org/oc/meta/ra/06012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0606> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06025> <http://xmlns.com/foaf/0.1/givenName> "Silvio" .
+<https://w3id.org/oc/meta/ra/0607> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06026> <http://xmlns.com/foaf/0.1/givenName> "Stephen K" .
+<https://w3id.org/oc/meta/ra/06018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0601> <http://xmlns.com/foaf/0.1/familyName> "Albouy" .
+<https://w3id.org/oc/meta/ra/0604> <http://xmlns.com/foaf/0.1/givenName> "Ruben" .
+<https://w3id.org/oc/meta/ra/06022> <http://xmlns.com/foaf/0.1/familyName> "Kuhn" .
+<https://w3id.org/oc/meta/ra/06033> <http://xmlns.com/foaf/0.1/familyName> "Reed" .
+<https://w3id.org/oc/meta/ra/06017> <http://xmlns.com/foaf/0.1/name> "Elsevier Bv" .
+<https://w3id.org/oc/meta/ra/0602> <http://xmlns.com/foaf/0.1/givenName> "Pascal" .
+<https://w3id.org/oc/meta/ra/06013> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0608> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06023> <http://xmlns.com/foaf/0.1/familyName> "Callahan" .
+<https://w3id.org/oc/meta/ra/06011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06021> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06014> <http://xmlns.com/foaf/0.1/name> "Springer International Publishing" .
+<https://w3id.org/oc/meta/ra/06034> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06025> <http://xmlns.com/foaf/0.1/familyName> "Peroni" .
+<https://w3id.org/oc/meta/ra/06010> <http://xmlns.com/foaf/0.1/givenName> "Tobias" .
+<https://w3id.org/oc/meta/ra/0605> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06035> <http://xmlns.com/foaf/0.1/familyName> "Hogue" .
+<https://w3id.org/oc/meta/ra/06036> <http://xmlns.com/foaf/0.1/familyName> "Villanueva-Rosales" .
+<https://w3id.org/oc/meta/ra/06026> <http://xmlns.com/foaf/0.1/familyName> "Reed" .
+<https://w3id.org/oc/meta/ra/06030> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06046> .
+<https://w3id.org/oc/meta/ra/0607> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06036> <http://xmlns.com/foaf/0.1/givenName> "Natalia" .
+<https://w3id.org/oc/meta/ra/06017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06028> <http://xmlns.com/foaf/0.1/name> "Edelweiss Publications Inc" .
+<https://w3id.org/oc/meta/ra/0603> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06030> <http://xmlns.com/foaf/0.1/name> "John Wiley & Sons, Inc." .
+<https://w3id.org/oc/meta/ra/0605> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06037> .
+<https://w3id.org/oc/meta/ra/06023> <http://xmlns.com/foaf/0.1/givenName> "Alison" .
+<https://w3id.org/oc/meta/ra/06027> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0602> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06031> <http://xmlns.com/foaf/0.1/givenName> "Tiffany I." .
+<https://w3id.org/oc/meta/ra/06014> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06042> .
+<https://w3id.org/oc/meta/ra/06032> <http://xmlns.com/foaf/0.1/familyName> "Wild" .
+<https://w3id.org/oc/meta/ra/06011> <http://xmlns.com/foaf/0.1/name> "Ios Press" .
+<https://w3id.org/oc/meta/ra/06027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06020> <http://xmlns.com/foaf/0.1/familyName> "Dubois" .
+<https://w3id.org/oc/meta/ra/06014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0603> <http://xmlns.com/foaf/0.1/name> "Persee Program" .
+<https://w3id.org/oc/meta/ra/06018> <http://xmlns.com/foaf/0.1/familyName> "Dubois" .
+<https://w3id.org/oc/meta/ra/06032> <http://xmlns.com/foaf/0.1/givenName> "David J." .
+<https://w3id.org/oc/meta/ra/0604> <http://xmlns.com/foaf/0.1/familyName> "Verborgh" .
+<https://w3id.org/oc/meta/ra/06034> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06029> <http://xmlns.com/foaf/0.1/givenName> "Leonid L." .
+<https://w3id.org/oc/meta/ra/0607> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0604> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06035> <http://xmlns.com/foaf/0.1/givenName> "Christopher Wv" .
+<https://w3id.org/oc/meta/ra/06022> <http://xmlns.com/foaf/0.1/givenName> "Tobias" .
+<https://w3id.org/oc/meta/ra/06031> <http://xmlns.com/foaf/0.1/familyName> "Leung" .
+<https://w3id.org/oc/meta/ra/0609> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/0605> <http://xmlns.com/foaf/0.1/familyName> "Dumontier" .
+<https://w3id.org/oc/meta/ra/06029> <http://xmlns.com/foaf/0.1/familyName> "Chepelev" .
+<https://w3id.org/oc/meta/ra/06010> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06040> .
+<https://w3id.org/oc/meta/ra/06020> <http://xmlns.com/foaf/0.1/givenName> "Michel" .
+<https://w3id.org/oc/meta/ra/06025> <http://purl.org/spar/datacite/hasIdentifier> <https://w3id.org/oc/meta/id/06044> .
+<https://w3id.org/oc/meta/ra/0608> <http://xmlns.com/foaf/0.1/familyName> "Wesley" .
+<https://w3id.org/oc/meta/ra/0606> <http://xmlns.com/foaf/0.1/name> "Institute Of Electrical And Electronics Engineers (ieee)" .
+<https://w3id.org/oc/meta/ra/06031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/oc/meta/ra/06015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+

@@ -1,0 +1,48 @@
+@prefix ns1: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix ns2: <http://purl.org/spar/pro/> .
+@prefix ns3: <http://purl.org/spar/fabio/> .
+@prefix ns4: <http://purl.org/vocab/frbr/core#> .
+@prefix ns5: <http://purl.org/dc/terms/> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/oc/meta/br/0601> a ns3:Expression,
+        ns3:JournalArticle ;
+    ns1:publicationDate "1995"^^xsd:gYear ;
+    ns5:title "Title6" ;
+    ns2:isDocumentContextFor <https://w3id.org/oc/meta/ar/0601>,
+        <https://w3id.org/oc/meta/ar/0602> ;
+    ns4:embodiment <https://w3id.org/oc/meta/re/0601> ;
+    ns4:partOf <https://w3id.org/oc/meta/br/0603> .
+
+<https://w3id.org/oc/meta/ar/0601> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns2:withRole ns2:author .
+
+<https://w3id.org/oc/meta/ar/0602> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns2:withRole ns2:publisher .
+
+<https://w3id.org/oc/meta/br/0602> a ns3:Expression,
+        ns3:Journal ;
+    ns5:title "venueX" .
+
+<https://w3id.org/oc/meta/br/0603> a ns3:Expression,
+        ns3:JournalIssue ;
+    ns3:hasSequenceIdentifier "7-8" ;
+    ns4:partOf <https://w3id.org/oc/meta/br/0602> .
+
+<https://w3id.org/oc/meta/ra/0601> a ns6:Agent ;
+    ns6:familyName "Surnamex" ;
+    ns6:givenName "Namex" .
+
+<https://w3id.org/oc/meta/ra/0602> a ns6:Agent ;
+    ns6:name "Pubx" .
+
+<https://w3id.org/oc/meta/re/0601> a ns3:Manifestation ;
+    ns1:endingPage "302" ;
+    ns1:startingPage "279" .
+

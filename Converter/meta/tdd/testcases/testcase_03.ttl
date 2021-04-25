@@ -1,0 +1,155 @@
+@prefix ns1: <http://purl.org/spar/datacite/> .
+@prefix ns2: <http://purl.org/spar/pro/> .
+@prefix ns3: <http://purl.org/vocab/frbr/core#> .
+@prefix ns4: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix ns7: <http://purl.org/spar/fabio/> .
+@prefix ns8: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/oc/meta/br/0601> a ns7:Expression,
+        ns7:JournalArticle ;
+    ns6:publicationDate "2001"^^xsd:gYear ;
+    ns8:title "Title3" ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/0601>,
+        <https://w3id.org/oc/meta/id/0602>,
+        <https://w3id.org/oc/meta/id/0603> ;
+    ns2:isDocumentContextFor <https://w3id.org/oc/meta/ar/0601>,
+        <https://w3id.org/oc/meta/ar/0602> ;
+    ns3:embodiment <https://w3id.org/oc/meta/re/0601> ;
+    ns3:partOf <https://w3id.org/oc/meta/br/0605> .
+
+<https://w3id.org/oc/meta/br/0602> a ns7:Expression,
+        ns7:JournalArticle ;
+    ns6:publicationDate "2001"^^xsd:gYear ;
+    ns8:title "Title5" ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/0604> ;
+    ns2:isDocumentContextFor <https://w3id.org/oc/meta/ar/0603>,
+        <https://w3id.org/oc/meta/ar/0604> ;
+    ns3:embodiment <https://w3id.org/oc/meta/re/0602> ;
+    ns3:partOf <https://w3id.org/oc/meta/br/0606> .
+
+<https://w3id.org/oc/meta/ar/0601> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0601> ;
+    ns2:withRole ns2:author .
+
+<https://w3id.org/oc/meta/ar/0602> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns2:withRole ns2:publisher .
+
+<https://w3id.org/oc/meta/ar/0603> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0603> ;
+    ns2:withRole ns2:author .
+
+<https://w3id.org/oc/meta/ar/0604> a ns2:RoleInTime ;
+    ns2:isHeldBy <https://w3id.org/oc/meta/ra/0602> ;
+    ns2:withRole ns2:publisher .
+
+<https://w3id.org/oc/meta/br/0603> a ns7:Expression,
+        ns7:Journal ;
+    ns8:title "Venue3" ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/0605> .
+
+<https://w3id.org/oc/meta/br/0605> a ns7:Expression,
+        ns7:JournalIssue ;
+    ns7:hasSequenceIdentifier "3" ;
+    ns3:partOf <https://w3id.org/oc/meta/br/0604> .
+
+<https://w3id.org/oc/meta/br/0606> a ns7:Expression,
+        ns7:JournalIssue ;
+    ns7:hasSequenceIdentifier "4-5" ;
+    ns3:partOf <https://w3id.org/oc/meta/br/0604> .
+
+<https://w3id.org/oc/meta/id/0601> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns4:hasLiteralValue "10.001/b-3" .
+
+<https://w3id.org/oc/meta/id/06010> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:crossref ;
+    ns4:hasLiteralValue "1111" .
+
+<https://w3id.org/oc/meta/id/06011> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:orcid ;
+    ns4:hasLiteralValue "0000-0003" .
+
+<https://w3id.org/oc/meta/id/06012> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:viaf ;
+    ns4:hasLiteralValue "1111113" .
+
+<https://w3id.org/oc/meta/id/06013> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "Q1111113" .
+
+<https://w3id.org/oc/meta/id/06014> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "11111113" .
+
+<https://w3id.org/oc/meta/id/0602> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "B1111113" .
+
+<https://w3id.org/oc/meta/id/0603> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "B3" .
+
+<https://w3id.org/oc/meta/id/0604> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns4:hasLiteralValue "10.00222" .
+
+<https://w3id.org/oc/meta/id/0605> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:issn ;
+    ns4:hasLiteralValue "1114" .
+
+<https://w3id.org/oc/meta/id/0606> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:orcid ;
+    ns4:hasLiteralValue "0000-0001" .
+
+<https://w3id.org/oc/meta/id/0607> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:viaf ;
+    ns4:hasLiteralValue "1111111" .
+
+<https://w3id.org/oc/meta/id/0608> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "Q1111111" .
+
+<https://w3id.org/oc/meta/id/0609> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns4:hasLiteralValue "11111112" .
+
+<https://w3id.org/oc/meta/ra/0601> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/0606>,
+        <https://w3id.org/oc/meta/id/0607>,
+        <https://w3id.org/oc/meta/id/0608>,
+        <https://w3id.org/oc/meta/id/0609> ;
+    ns5:familyName "Surname1" ;
+    ns5:givenName "Name1" .
+
+<https://w3id.org/oc/meta/ra/0603> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/06011>,
+        <https://w3id.org/oc/meta/id/06012>,
+        <https://w3id.org/oc/meta/id/06013>,
+        <https://w3id.org/oc/meta/id/06014> ;
+    ns5:familyName "Surname3" ;
+    ns5:givenName "Name3" .
+
+<https://w3id.org/oc/meta/re/0601> a ns7:Manifestation ;
+    ns6:endingPage "200" ;
+    ns6:startingPage "125" .
+
+<https://w3id.org/oc/meta/re/0602> a ns7:Manifestation ;
+    ns6:endingPage "231" ;
+    ns6:startingPage "201" .
+
+<https://w3id.org/oc/meta/br/0604> a ns7:Expression,
+        ns7:JournalVolume ;
+    ns7:hasSequenceIdentifier "8" ;
+    ns3:partOf <https://w3id.org/oc/meta/br/0603> .
+
+<https://w3id.org/oc/meta/ra/0602> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/06010> ;
+    ns5:name "Pub1" .
+

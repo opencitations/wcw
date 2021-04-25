@@ -1,0 +1,5 @@
+"id","title","author","pub_date","venue","volume","issue","page","type","publisher","editor"
+"doi:10.001/B-1 meta:br/0601","Book1","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","Bookseries [doi:10.001 isbn:1111 meta:br/0602]","","","","book","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"
+"doi:10.001 isbn:1111 meta:br/0602","Bookseries","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","","","","","book series","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"
+"doi:10.002/B-2 meta:br/0603","Book2","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","Bookset [doi:10.002 isbn:2222 meta:br/0604]","","","","book","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"
+"doi:10.002 isbn:2222 meta:br/0604","Bookset","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","","","","","book series","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"

@@ -1,0 +1,217 @@
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06028' has been created." <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06028/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06028> <https://w3id.org/oc/meta/ra/06028/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06030' has been created." <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06030> <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/06030/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06030/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0608' has been created." <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/0608/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0608> <https://w3id.org/oc/meta/ra/0608/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06012> <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06012' has been created." <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/06012/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06012/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0605' has been created." <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0605> <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/0605/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0605/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06010' has been created." <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06010> <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06010/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06010/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06024' has been created." <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06024> <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06024/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06024/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06019' has been created." <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06019> <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06019/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06019/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06031' has been created." <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06031> <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06031/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06031/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06011' has been created." <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06011> <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/06011/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06011/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0609> <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0609' has been created." <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/0609/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0609/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06020' has been created." <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06020> <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06020/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06020/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06032> <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06032' has been created." <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06032/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06032/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06018> <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06018' has been created." <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06018/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06018/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06015' has been created." <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06015> <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06015/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06015/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06013' has been created." <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06013> <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06013/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06013/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06033' has been created." <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06033/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06033> <https://w3id.org/oc/meta/ra/06033/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06014' has been created." <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06014> <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/06014/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06014/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0604' has been created." <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0604> <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/0604/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0604/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06021' has been created." <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06021> <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/06021/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06021/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0607> <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/0607/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0607' has been created." <https://w3id.org/oc/meta/ra/0607/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06016' has been created." <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06016/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06016> <https://w3id.org/oc/meta/ra/06016/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06025> <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06025' has been created." <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06025/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06025/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06017> <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06017' has been created." <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06017/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06017/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06023> <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06023/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06023' has been created." <https://w3id.org/oc/meta/ra/06023/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06035> <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06035/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06035' has been created." <https://w3id.org/oc/meta/ra/06035/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06026' has been created." <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/06026/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06026> <https://w3id.org/oc/meta/ra/06026/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0603> <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0603' has been created." <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/0603/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0603/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06029> <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06029' has been created." <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/06029/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06029/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0606> <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0606' has been created." <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/0606/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0606/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06027' has been created." <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06027/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06027> <https://w3id.org/oc/meta/ra/06027/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06034' has been created." <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06034> <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/06034/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06034/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0602' has been created." <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0602> <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0602/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0602/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/0601> <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/0601/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/0601' has been created." <https://w3id.org/oc/meta/ra/0601/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06036' has been created." <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06036> <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06036/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06036/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://purl.org/dc/terms/description> "The entity 'https://w3id.org/oc/meta/ra/06022' has been created." <https://w3id.org/oc/meta/ra/06022/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/oc/meta/prov/pa/1> <https://w3id.org/oc/meta/ra/06022/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://www.w3.org/ns/prov#hadPrimarySource> <https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz> <https://w3id.org/oc/meta/ra/06022/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://www.w3.org/ns/prov#specializationOf> <https://w3id.org/oc/meta/ra/06022> <https://w3id.org/oc/meta/ra/06022/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://www.w3.org/ns/prov#generatedAtTime> "2020-02-15T17:44:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> <https://w3id.org/oc/meta/ra/06022/prov/> .
+<https://w3id.org/oc/meta/ra/06022/prov/se/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> <https://w3id.org/oc/meta/ra/06022/prov/> .
+

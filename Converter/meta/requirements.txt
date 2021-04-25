@@ -1,0 +1,7 @@
+pymantic==0.3.0
+rdflib==5.0.0
+requests==2.25.1
+SPARQLWrapper==1.8.5
+oc_ocdm==6.0.0
+argparse==1.4.0
+python-dateutil==2.8.1

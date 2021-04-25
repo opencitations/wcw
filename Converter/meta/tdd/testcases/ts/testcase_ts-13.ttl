@@ -1,0 +1,111 @@
+@prefix ns1: <http://purl.org/spar/datacite/> .
+@prefix ns2: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix ns3: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix ns4: <http://purl.org/spar/pro/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/terms/> .
+@prefix ns7: <http://purl.org/spar/fabio/> .
+@prefix ns8: <http://purl.org/vocab/frbr/core#> .
+@prefix ns9: <https://w3id.org/oc/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/oc/meta/br/060101> a ns7:Expression;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060101>,
+    <https://w3id.org/oc/meta/id/060102>;
+    ns4:isDocumentContextFor <https://w3id.org/oc/meta/ar/060101>,
+        <https://w3id.org/oc/meta/ar/060102>;
+    ns8:embodiment <https://w3id.org/oc/meta/re/060101> ;
+    ns8:partOf <https://w3id.org/oc/meta/br/060300> .
+
+<https://w3id.org/oc/meta/ra/060101> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060111>;
+    ns5:familyName "Surname1" ;
+    ns5:givenName "Name1" .
+
+<https://w3id.org/oc/meta/ra/060102> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060112>;
+    ns5:familyName "Surname2" ;
+    ns5:givenName "Name2" .
+
+<https://w3id.org/oc/meta/re/060101> a ns7:Manifestation ;
+    ns3:endingPage "278" ;
+    ns3:startingPage "266" .
+
+<https://w3id.org/oc/meta/ar/060101> a ns4:RoleInTime ;
+    ns4:isHeldBy <https://w3id.org/oc/meta/ra/060101> ;
+    ns4:withRole ns4:author ;
+    ns9:hasNext <https://w3id.org/oc/meta/ar/060102> .
+
+<https://w3id.org/oc/meta/ar/060102> a ns4:RoleInTime ;
+    ns4:isHeldBy <https://w3id.org/oc/meta/ra/060102> ;
+    ns4:withRole ns4:author .
+
+<https://w3id.org/oc/meta/br/060102> a ns7:Expression;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060103>.
+
+
+<https://w3id.org/oc/meta/br/060103> a ns7:Expression;
+    ns6:title "Title3" ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060103>.
+
+
+<https://w3id.org/oc/meta/id/060101> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "1" .
+
+<https://w3id.org/oc/meta/id/060102> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "2" .
+
+<https://w3id.org/oc/meta/id/060103> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "3" .
+
+<https://w3id.org/oc/meta/id/060111> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:viaf ;
+    ns2:hasLiteralValue "1" .
+
+<https://w3id.org/oc/meta/id/060112> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:viaf ;
+    ns2:hasLiteralValue "2" .
+
+
+<https://w3id.org/oc/meta/br/060300> a ns7:Expression,
+    ns7:JournalIssue ;
+    ns7:hasSequenceIdentifier "5-6" ;
+    ns8:partOf <https://w3id.org/oc/meta/br/060310> ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060300>.
+
+<https://w3id.org/oc/meta/br/060310> a ns7:Expression,
+    ns7:JournalVolume ;
+    ns7:hasSequenceIdentifier "1" ;
+    ns8:partOf <https://w3id.org/oc/meta/br/060301>;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060310>.
+
+<https://w3id.org/oc/meta/br/060301> a ns7:Expression,
+    ns7:Journal ;
+    ns6:title "Venue1" ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060301>.
+
+<https://w3id.org/oc/meta/id/060300> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "300" .
+
+<https://w3id.org/oc/meta/id/060310> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "310" .
+
+<https://w3id.org/oc/meta/id/060301> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:doi ;
+    ns2:hasLiteralValue "301" .
+
+<https://w3id.org/oc/meta/id/060007> a ns1:Identifier ;
+    ns1:usesIdentifierScheme ns1:wikidata ;
+    ns2:hasLiteralValue "Q2009573" .
+    
+<https://w3id.org/oc/meta/ra/060007> a ns5:Agent ;
+    ns1:hasIdentifier <https://w3id.org/oc/meta/id/060007>;
+    ns5:familyName "Bond".

@@ -1,0 +1,9 @@
+>python -m meta.orcid.index_orcid_doi 
+    -c C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\orcid\\doi_orcid.csv
+    -s C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\summaries
+    -v C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\doi\\valid_doi.csv
+
+python -m meta.run_preprocess -c C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\json -o C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\orcid\\doi_orcid.csv -v C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\CSV -w C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\doi\\wanted_doi.csv
+
+
+python -m meta.run_process -c C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\CSV -v C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\CSVe -i C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\CSVe\\indices -a C:\\Users\\Fabio\\Documents\\GitHub\\meta\\DEMO\\Peroni\\auxiliary\\auxiliary.txt -s https://api.crossref.org/snapshots/monthly/2019/09/all.json.tar.gz

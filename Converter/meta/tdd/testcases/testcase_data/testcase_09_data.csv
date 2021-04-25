@@ -1,0 +1,3 @@
+"id","title","author","pub_date","venue","volume","issue","page","type","publisher","editor"
+"doi:10.001/B-1 meta:br/0601","Title1","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","","","","","proceedings","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"
+"doi:10.002/B-2 meta:br/0602","Title2","Surname1, Name1 [orcid:0000-0001 meta:ra/0601]","1995","Venue2 [isbn:1112 meta:br/0603]","","","","proceedings article","Pub1 [crossref:1111 meta:ra/0602]","Editsurname1, Editname1 [viaf:11111111 meta:ra/0603]"
