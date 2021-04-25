@@ -110,10 +110,10 @@ cd <path>/Converter
 python -m meta.run_process -c "<PATH_1>" -v "<PATH_2>" -i "<PATH_3>" -a "<PATH_4>" -s "https://zenodo.org/record/3940692#.YGhw6s9xfcs"
 ```
 , where:
-  * PATH_1 = the `run_process.py` CSV output dir (it MUST be the same as `extracted_csv_dir` from `Converter/conf/conf.py`);
-  * PATH_2 = the `meta` CSV output dir (`<path>/meta_folder/csv_output/`);
-  * PATH_3 = a `meta` temporary folder (`<path>/meta_folder/index`);
-  * PATH_4 = the `meta` auxiliary file (`<path>/meta_folder/auxiliary.txt`).
+  * <PATH_1> = the `run_process.py` CSV output dir (it MUST be the same as `extracted_csv_dir` from `Converter/conf/conf.py`);
+  * <PATH_2> = the `meta` CSV output dir (`<path>/meta_folder/csv_output/`);
+  * <PATH_3> = a `meta` temporary folder (`<path>/meta_folder/index`);
+  * <PATH_4> = the `meta` auxiliary file (`<path>/meta_folder/auxiliary.txt`).
 
 ### run_process_citations.py
 The user should take care of creating a folder structure as follows:
