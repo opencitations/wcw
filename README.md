@@ -20,7 +20,7 @@ Quoting the [grant's description](https://meta.wikimedia.org/wiki/Wikicite/grant
 >  4. **pusher** a module to disambiguate, deduplicate, and load citation and bibliographic data
 >    in Wikidata that reuses code already developed by the wikidata community as much as possible.
 
-The repository folder structure reflects this same modules that constitue the entire workflow.
+The repository folder structure reflects these same modules that constitue the entire workflow.
 
 ## Instructions
 Each module has a `README` file that contains specific instructions on how to setup the execution
