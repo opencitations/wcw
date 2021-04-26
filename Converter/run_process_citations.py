@@ -238,7 +238,7 @@ def process(cur_citations_file: str, conversion_dict: Dict[str, str]) -> None:
         # adopted by OpenCitations: all the newly created citations are kept
         # in a single file.
         # In the following steps of the workflow, every script assumes that data was produced in chunks:
-        # this means that this modality should never be choosed and that 'rdf_output_in_chunks' must
+        # this means that this modality should never be chosen and that 'rdf_output_in_chunks' must
         # be set to True.
         filename_without_csv: str = cur_citations_file[:-4]
 
@@ -258,7 +258,7 @@ def process(cur_citations_file: str, conversion_dict: Dict[str, str]) -> None:
         # Newly created citations could be split into different files based on
         # various conditions.
         # In the following steps of the workflow, every script assumes that data was produced in chunks:
-        # this means that this modality should never be choosed and that 'rdf_output_in_chunks' must
+        # this means that this modality should never be chosen and that 'rdf_output_in_chunks' must
         # be set to True.
         ci_storer.upload_and_store(
             converter_citations_rdf_output_dir, triplestore_url, base_iri, context_path, batch_size=100)
