@@ -46,7 +46,7 @@ More details can be found inside the `README` documents of each module; please r
 information about the inner workings of each workflow step.
 
 ## License
-Distributed under the ??? License. See `LICENSE` for more information.
+Distributed under the ISC License. See `LICENSE` for more information.
 
 ## Contact
 Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) - essepuntato@gmail.com
