@@ -83,9 +83,9 @@ The user should take care of creating a folder structure as follows:
               + 'info_dir'--
               |           (initially empty)
               + 'rdf_output'--
-                            (initially empty)
+              |             (initially empty)
+              + 'auxiliary.txt' (empty file)
 ```
-An empty file named 'auxiliary.txt' should be also created inside 'meta_folder'.
 
 The configuration file of this project is available at this path: `Converter/meta/lib/conf.py`.
 | Constant | Description |

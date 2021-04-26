@@ -58,7 +58,7 @@ The configuration file of **both scripts** is available at this path: `Pusher/co
 | `pusher_citations_csv_file` | **the path of a temporary CSV file used by `run_process_citations.py`. It should be `<path>/pusher_folder/citations_mapping.csv`.** |
 | `pusher_citations_batch_file` | **the output path of the `run_process_citations.py` script.** It's a TSV file (initially empty) to which the script appends the TSV statements to be bulk-uploaded via the web interface of QuickStatements. It should be `<path>/pusher_folder/citations_batch.tsv`. |
 | `citations_batches_dir` | **the input RDF files folder for the `run_process_citations.py` script.** It should be `<path>/citations_folder/rdf_output/` (the same as `converter_citations_rdf_output_dir` in `Converter/conf/conf_citations.py`). |
-| `temp_TSV_batch_output_file` | the output path of the `run_process.py` script. It's a TSV file that gets overwritten several times by the script: every time the file is overwritten with new TSV statements, the script pauses and waits for the user to bulk-upload them via the web interface of QuickStatements. It should be `<path>/pusher_folder/temp_TSV_batch.tsv`. |
+| `temp_TSV_batch_output_file` | **the output path of the `run_process.py` script.** It's a TSV file that gets overwritten several times by the script: every time the file is overwritten with new TSV statements, the script pauses and waits for the user to bulk-upload them via the web interface of QuickStatements. It should be `<path>/pusher_folder/temp_TSV_batch.tsv`. |
 
 ### run_process.py
 **Once configured**, the script can be simply run as follows:
