@@ -98,7 +98,7 @@ The configuration file of this project is available at this path: `Converter/met
 | `dir_split_number` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `items_per_file` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `default_dir` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
-| `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since it isn't particularly interesting for this workflow._ |
+| `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
 | `rdf_output_in_chunks` | **a bool flag. For the WCW workflow, it MUST be valued as `True`.** |
 
 **Once configured**, the script can be simply run as follows:
