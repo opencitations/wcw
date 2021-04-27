@@ -50,9 +50,13 @@ Distributed under the ISC License. See `LICENSE` for more information.
 
 ## Contact
 Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) - essepuntato@gmail.com
+
 Simone Persiani - iosonopersia@gmail.com
+
 Marilena Daquino - marilena.daquino2@unibo.it
+
 Gabriele Pisciotta - ga.pisciotta@gmail.com
+
 Giovanni Colavizza - giovannicolavizza@gmail.com
 
 Project Link: https://github.com/opencitations/wcw
