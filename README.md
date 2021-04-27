@@ -10,14 +10,14 @@ Quoting the [grant's description](https://meta.wikimedia.org/wiki/Wikicite/grant
 
 > Our goal is to develop four software modules in Python (the codebase from now on) that can be
 >    easily reused by developers in the Wikidata community:
->  1. **extractor** a module to extract citation and bibliographic information from articles in
+>  1. [**extractor**](Extractor) a module to extract citation and bibliographic information from articles in
 >    the English Wikipedia;
->  2. **converter** a module to convert extracted information into a CSV-based format compliant
+>  2. [**converter**](Converter) a module to convert extracted information into a CSV-based format compliant
 >    with a shareable bibliographic data model, e.g., the OpenCitations Data Model;
->  3. **enricher** a module for reconciling bibliographic resources and people (obtained in step 2)
+>  3. [**enricher**](Enricher) a module for reconciling bibliographic resources and people (obtained in step 2)
 >    with entities available in Wikidata via their persistent identifiers (primarily DOIs, 
 >    QIDs, ORCIDs, VIAFs, then also persons, places and organisations if time allows);
->  4. **pusher** a module to disambiguate, deduplicate, and load citation and bibliographic data
+>  4. [**pusher**](Pusher) a module to disambiguate, deduplicate, and load citation and bibliographic data
 >    in Wikidata that reuses code already developed by the wikidata community as much as possible.
 
 The repository folder structure reflects these same modules that constitue the entire workflow.
@@ -29,16 +29,16 @@ entire process is given.
 
 This particular workflow strictly requires that the user executes the given scripts in a particular
 order:
-  1. the **Extractor** module takes as input a dump of the current English Wikipedia pages and outputs 
+  1. the [**Extractor**](Extractor) module takes as input a dump of the current English Wikipedia pages and outputs 
      a parquet dataset containing the extracted citations. Our suggestion is to directly download the
      [parquet dataset from here at Zenodo](https://zenodo.org/record/3940692#.X9JOIun0mL8) (the ZIP 
      file to be downloaded is called **"citations_from_wikipedia.zip"**).
-  2. the **Converter** module takes as input the parquet dataset from the previous step and produces a 
+  2. the [**Converter**](Converter) module takes as input the parquet dataset from the previous step and produces a 
      set of RDF files which are [OCDM compliant](https://figshare.com/articles/online_resource/Metadata_for_the_OpenCitations_Corpus/3443876).
-  3. the **Enricher** module takes as input the RDF files from the previous step and tries to enrich them
+  3. the [**Enricher**](Enricher) module takes as input the RDF files from the previous step and tries to enrich them
      as much as possible by adding external identifiers coming from various APIs. When the external
      identifiers are added, a deduplication step is applied to each RDF file.
-  4. the **Pusher** module take as input the enriched RDF files from the previous step and produces TSV
+  4. the [**Pusher**](Pusher) module take as input the enriched RDF files from the previous step and produces TSV
      files compliant with the QuickStatements input format that enable the user to bulk upload the
      citational data onto Wikidata.
 
@@ -50,6 +50,10 @@ Distributed under the ISC License. See `LICENSE` for more information.
 
 ## Contact
 Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) - essepuntato@gmail.com
+Simone Persiani - iosonopersia@gmail.com
+Marilena Daquino - marilena.daquino2@unibo.it
+Gabriele Pisciotta - ga.pisciotta@gmail.com
+Giovanni Colavizza - giovannicolavizza@gmail.com
 
 Project Link: https://github.com/opencitations/wcw
 
