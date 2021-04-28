@@ -8,7 +8,7 @@ The third step of the WCW workflow.
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contacts">Contacts</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
 
@@ -64,8 +64,14 @@ python run_process.py
 Distributed under the ISC License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
-## Contact
-Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) - essepuntato@gmail.com
+## Contacts
+|Project member |e-mail address |
+|---|---|
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw
 
