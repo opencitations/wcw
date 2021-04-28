@@ -49,15 +49,13 @@ information about the inner workings of each workflow step.
 Distributed under the ISC License. See `LICENSE` for more information.
 
 ## Contact
-Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) - essepuntato@gmail.com
-
-Simone Persiani - iosonopersia@gmail.com
-
-Marilena Daquino - marilena.daquino2@unibo.it
-
-Gabriele Pisciotta - ga.pisciotta@gmail.com
-
-Giovanni Colavizza - giovannicolavizza@gmail.com
+|Project member |e-mail address |
+|---|---|
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw
 
