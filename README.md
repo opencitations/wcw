@@ -48,7 +48,7 @@ information about the inner workings of each workflow step.
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
 
-## Contact
+## Contacts
 |Project member |e-mail address |
 |---|---|
 | Gabriele Pisciotta | ga.pisciotta@gmail.com |
