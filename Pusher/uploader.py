@@ -52,7 +52,7 @@ def upload_batch(entity_batch: Dict[URIRef, WDEntity]):
     print("> BATCH UPLOAD")
     print(f">> Temporary TSV batch file: {temp_TSV_batch_output_file}")
     print(">> The temporary TSV batch file is going to be overwritten.")
-    print()
+    print(">>")
     print(">> Would you like to proceed anyway?")
     input(">>> Press [ENTER] to proceed or [CTRL+C] to stop the execution of the entire process: ")
     input(">>> Please confirm (press ENTER again): ")
