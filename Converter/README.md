@@ -106,7 +106,7 @@ The configuration file of this project is available at this path: `Converter/met
 | `items_per_file` | _an integer value that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `default_dir` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
-| `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
+| `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be safely left as it is._ |
 | `rdf_output_in_chunks` | **a bool flag. For the WCW workflow, it MUST be valued as `True`.** |
 
 **Once configured**, the script can be simply run as follows:
@@ -131,7 +131,6 @@ The user should take care of creating a folder structure as follows:
 ```
 
 The configuration file of this script is available at this path: `Converter/conf/conf_citations.py`.
-**The user should change only variables which are listed down below: other values should be kept unchanged, since they are default values for parameters that are needed by the oc_ocdm package.**
 
 | Constant | Description |
 |---|---|
@@ -139,8 +138,15 @@ The configuration file of this script is available at this path: `Converter/conf
 | `citations_csv_dir` | CSV files input directory (it should be `<path>/converter_folder/citations/`). |
 | `converter_citations_csv_output_dir` | CSV files output directory (it should be `<path>/citations_folder/csv_output/`). |
 | `converter_citations_rdf_output_dir` | RDF files output directory (it should be `<path>/citations_folder/rdf_output/`). |
+| `base_iri` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `triplestore_url` | it should be the same as `triplestore_url` from `Converter/meta/lib/conf.py`. |
+| `query_timeout` | the timeout duration (integer value in seconds) for each SPARQL query made against the local triplestore. |
+| `context_path` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `info_dir` | a support folder used by oc_ocdm. It should not be deleted until the end of the Enricher step and it should be the same for all the scripts of this workflow (it must be `<path>/meta_folder/info_dir/`).  |
+| `dir_split_number` | _an integer value that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `items_per_file` | _an integer value that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `default_dir` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be safely left as it is._ |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `rdf_output_in_chunks` | **this bool flag MUST be valued as `True`.** |
 

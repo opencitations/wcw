@@ -53,7 +53,7 @@ The configuration file of **both scripts** is available at this path: `Pusher/co
 | `base_iri` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `query_timeout` | the timeout duration (integer value in seconds) for each SPARQL query made against the Wikidata endpoint. (See the `reconciliator.py` module). |
 | `query_wait_time` | the time to wait before each new SPARQL query (integer value in seconds). This is useful in order to avoid errors due to the limited amount of queries that can be performed in a minute against the Wikidata endpoint. (See the `reconciliator.py` module). |
-| `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
+| `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
 | `base_dir` | **the input RDF files folder.** It could be `<path>/enricher_folder/deduplicated/` (for enriched and deduplicated RDF graphs), `<path>/enricher_folder/enriched/` (for enriched-only RDF graphs) or `<path>/meta_folder/rdf_output/` (for RDF graphs produced by the Converter and not processed by the Enricher). |
 | `pusher_citations_csv_file` | **the path of a temporary CSV file used by `run_process_citations.py`. It should be `<path>/pusher_folder/citations_mapping.csv`.** |
 | `pusher_citations_batch_file` | **the output path of the `run_process_citations.py` script.** It's a TSV file (initially empty) to which the script appends the TSV statements to be bulk-uploaded via the web interface of QuickStatements. It should be `<path>/pusher_folder/citations_batch.tsv`. |
@@ -82,10 +82,10 @@ Distributed under the ISC License. See `LICENSE` for more information.
 ## Contacts
 |Project member |e-mail address |
 |---|---|
-| Gabriele Pisciotta | ga.pisciotta@gmail.com |
-| Giovanni Colavizza | giovannicolavizza@gmail.com |
-| Marilena Daquino | marilena.daquino2@unibo.it |
 | Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
 | Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw

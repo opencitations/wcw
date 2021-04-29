@@ -50,9 +50,9 @@ The configuration file of the script is available at this path: `Enricher/conf.p
 |---|---|
 | `rdf_input_dir` | **the input RDF files folder. It should be `<path>/meta_folder/rdf_output/`.** |
 | `rdf_output_dir` | **the output RDF files folder. It should be `<path>/enricher_folder/`.**
-| `base_iri` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
-| `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the modification/merge/deletion of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
-| `info_dir` | **the path of a temporary folder needed by the oc_ocdm package. It should be `<path>/meta_folder/info_dir/`.** |
+| `base_iri` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the modification/merge/deletion of new OCDM entities). It can be safely left as it is._ |
+| `info_dir` | a support folder used by oc_ocdm. It should not be deleted until the end of the Enricher step and it should be the same for all the scripts of this workflow (it must be `<path>/meta_folder/info_dir/`).  |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 
 **Once configured**, the script can be simply run as follows:
@@ -69,10 +69,10 @@ Distributed under the ISC License. See `LICENSE` for more information.
 ## Contacts
 |Project member |e-mail address |
 |---|---|
-| Gabriele Pisciotta | ga.pisciotta@gmail.com |
-| Giovanni Colavizza | giovannicolavizza@gmail.com |
-| Marilena Daquino | marilena.daquino2@unibo.it |
 | Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
 | Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw
