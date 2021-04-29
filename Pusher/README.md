@@ -14,7 +14,7 @@ The fourth and last step of the WCW workflow.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This module is the fourth and last part of the WCW workflow. It aims at producing TSV files (compliant with QuickStatements) that can be manually bulk-uploaded onto Wikidata. It takes
+This module is the fourth and last part of the WCW workflow. It aims at producing TSV files (compliant with [QuickStatements](https://quickstatements.toolforge.org/#/)) that can be manually bulk-uploaded onto Wikidata. It takes
 as input RDF files produced by the Converter and eventually processed by the Enricher. During
 the execution, OCDM entities from the input graphs are reconciled with Wikidata entities. The
 reconciliation is mainly based on the external identifiers associated with each bibliographic
@@ -56,9 +56,9 @@ The configuration file of **both scripts** is available at this path: `Pusher/co
 | `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
 | `base_dir` | **the input RDF files folder.** It could be `<path>/enricher_folder/deduplicated/` (for enriched and deduplicated RDF graphs), `<path>/enricher_folder/enriched/` (for enriched-only RDF graphs) or `<path>/meta_folder/rdf_output/` (for RDF graphs produced by the Converter and not processed by the Enricher). |
 | `pusher_citations_csv_file` | **the path of a temporary CSV file used by `run_process_citations.py`. It should be `<path>/pusher_folder/citations_mapping.csv`.** |
-| `pusher_citations_batch_file` | **the output path of the `run_process_citations.py` script.** It's a TSV file (initially empty) to which the script appends the TSV statements to be bulk-uploaded via the web interface of QuickStatements. It should be `<path>/pusher_folder/citations_batch.tsv`. |
+| `pusher_citations_batch_file` | **the output path of the `run_process_citations.py` script.** It's a TSV file (initially empty) to which the script appends the TSV statements to be bulk-uploaded via the web interface of [QuickStatements](https://quickstatements.toolforge.org/#/). It should be `<path>/pusher_folder/citations_batch.tsv`. |
 | `citations_batches_dir` | **the input RDF files folder for the `run_process_citations.py` script.** It should be `<path>/citations_folder/rdf_output/` (the same as `converter_citations_rdf_output_dir` in `Converter/conf/conf_citations.py`). |
-| `temp_TSV_batch_output_file` | **the output path of the `run_process.py` script.** It's a TSV file that gets overwritten several times by the script: every time the file is overwritten with new TSV statements, the script pauses and waits for the user to bulk-upload them via the web interface of QuickStatements. It should be `<path>/pusher_folder/temp_TSV_batch.tsv`. |
+| `temp_TSV_batch_output_file` | **the output path of the `run_process.py` script.** It's a TSV file that gets overwritten several times by the script: every time the file is overwritten with new TSV statements, the script pauses and waits for the user to bulk-upload them via the web interface of [QuickStatements](https://quickstatements.toolforge.org/#/). It should be `<path>/pusher_folder/temp_TSV_batch.tsv`. |
 
 ### run_process.py
 **Once configured**, the script can be simply run as follows:
@@ -67,12 +67,50 @@ cd <path>/Pusher
 python run_process.py
 ```
 
+This is an interactive script: every now and then it will pause, asking the user to interact with it. Every time a batch
+of new statements will be ready, the script will pause and print the following message:
+```
+$ [...]
+$ > BATCH UPLOAD
+$ >> Temporary TSV batch file: <path>/pusher_folder/tmp_TSV_batch.tsv
+$ >> The temporary TSV batch file is going to be overwritten.
+$ >>
+$ >> Would you like to proceed anyway?
+```
+
+**This is the perfect time for the user to save a copy of the `tmp_TSV_batch.tsv` file somewhere else on the filesystem (if needed).
+The entire file will be overwritten in the following step.**
+
+The user is then asked to press ENTER twice to proceed. If CTRL+C is pressed instead, the entire process will stop.
+```
+$ >>> Press [ENTER] to proceed or [CTRL+C] to stop the execution of the entire process:
+$ >>> Please confirm (press ENTER again): 
+```
+
+After that, the `tmp_TSV_batch.tsv` is overwritten with new statements. The user should now head over to the web interface
+of [QuickStatements](https://quickstatements.toolforge.org/#/) and bulk-upload that TSV file. Once the upload process is completed,
+a double-confirm is required again to proceed:
+```
+$ >> The TSV file has been overwritten. Please manually upload it with the web interface of QuickStatements!
+$ >>> Press [ENTER] when you're done to proceed or [CTRL+C] to stop the execution of the entire process:
+$ >>> Please confirm (press ENTER again): 
+```
+
+The user should now confirm by pressing ENTER twice. The script will go on until a new batch of statements will be ready:
+at that moment, this entire interactive procedure will repeat.
+
+The script will stop only when the entire input dataset will have been processed.
+
 ### run_process_citations.py
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Pusher
 python run_process_citations.py
 ```
+
+This script, unlike the other one, is not interactive. It will run until the entire input dataset will have been processed.
+At the end of its execution, the user should head over to the web interface of [QuickStatements](https://quickstatements.toolforge.org/#/)
+and bulk-upload the `<path>/pusher_folder/citations_batch.tsv` TSV file.
 
 <!-- LICENSE -->
 ## License
