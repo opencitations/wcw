@@ -53,6 +53,13 @@ A new and clean instance of a triplestore is required by the **meta** and **run_
 <!-- USAGE EXAMPLES -->
 ## Usage
 ### run_process.py
+The user should take care of creating a folder structure as follows:
+```
+'converter_folder'--
+                   + 'citations'--
+                   |             (initially empty)
+```
+
 The configuration file of this script is available at this path: `Converter/conf/conf.py`.
 | Constant | Description |
 |---|---|
@@ -60,7 +67,7 @@ The configuration file of this script is available at this path: `Converter/conf
 | `process_pool_size` | an integer representing the number of simultaneous processes that should be spawned by the script. A value of 0 or less is automatically replaced by the number of logical CPU threads of the system. For a sequential execution (which, by the way, is discouraged by the author), a value of 1 could be used. |
 | `classify_even_if_type_is_uncertain` | a bool flag. Some citations do not have any ID that can help us classifying them (i.e. doi, pmid, isbn, ...). Should the script try to label them based on the 'type_of_citation' column? (See module `classifier.py`). |
 | `input_parquet_file` | **the path of the parquet dataset (it's supposed to be a folder named `dataset.parquet`).** |
-| `extracted_csv_dir` | **the output folder of this script.** |
+| `extracted_csv_dir` | **the output folder of this script. (It should be `<path>/converter_folder/`).** |
 | `allowed_citation_types` | a set of strings representing the allowed types of citations. When importing data from the parquet dataset, rows with a 'type_of_citation' (Wikipedia citation template) different from any of them will be discarded. (See module `reader.py`). **Default values SHOULD be kept (the script was written with them in mind).** |
 
 **Once configured**, the script can be simply run as follows:
@@ -91,13 +98,13 @@ The configuration file of this project is available at this path: `Converter/met
 | Constant | Description |
 |---|---|
 | `base_dir` | **the RDF files output folder. It should be `<path>/meta_folder/rdf_output/`.** |
-| `base_iri` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `base_iri` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `triplestore_url` | **the SPARQL endpoint of the active triplestore. It must be a URL.** |
-| `context_path` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
-| `info_dir` | **the path of a temporary folder needed by the oc_ocdm package. It should be `<path>/meta_folder/info_dir/`.** |
-| `dir_split_number` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
-| `items_per_file` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
-| `default_dir` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `context_path` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `info_dir` | a support folder used by oc_ocdm. It should not be deleted until the end of the Enricher step and it should be the same for all the scripts of this workflow (it must be `<path>/meta_folder/info_dir/`).  |
+| `dir_split_number` | _an integer value that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `items_per_file` | _an integer value that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `default_dir` | _a string that can be safely left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
 | `rdf_output_in_chunks` | **a bool flag. For the WCW workflow, it MUST be valued as `True`.** |
@@ -108,7 +115,7 @@ cd <path>/Converter
 python -m meta.run_process -c "<PATH_1>" -v "<PATH_2>" -i "<PATH_3>" -a "<PATH_4>" -s "https://zenodo.org/record/3940692#.YGhw6s9xfcs"
 ```
 , where:
-  * <PATH_1> = the `run_process.py` CSV output dir (it MUST be the same as `extracted_csv_dir` from `Converter/conf/conf.py`);
+  * <PATH_1> = the `run_process.py` CSV output dir (it should be `<path>/converter_folder/`);
   * <PATH_2> = the `meta` CSV output dir (`<path>/meta_folder/csv_output/`);
   * <PATH_3> = a `meta` temporary folder (`<path>/meta_folder/index`);
   * <PATH_4> = the `meta` auxiliary file (`<path>/meta_folder/auxiliary.txt`).
@@ -119,8 +126,6 @@ The user should take care of creating a folder structure as follows:
 'citations_folder'--
                    + 'csv_output'--
                    |             (initially empty)
-                   + 'info_dir'--
-                   |           (initially empty)
                    + 'rdf_output'--
                                  (initially empty)
 ```
@@ -131,12 +136,11 @@ The configuration file of this script is available at this path: `Converter/conf
 | Constant | Description |
 |---|---|
 | `meta_csv_output_dir` | the CSV files output directory of `meta` (it should be `<path>/meta_folder/csv_output/`). |
-| `citations_csv_dir` | CSV files input directory (it should be `extracted_csv_dir`+"/citations/", with `extracted_csv_dir` value taken from the `Converter/conf/conf.py` file). |
-| `converter_citations_info_dir` | a temporary folder (it should be `<path>/citations_folder/info_dir/`). |
+| `citations_csv_dir` | CSV files input directory (it should be `<path>/converter_folder/citations/`). |
 | `converter_citations_csv_output_dir` | CSV files output directory (it should be `<path>/citations_folder/csv_output/`). |
 | `converter_citations_rdf_output_dir` | RDF files output directory (it should be `<path>/citations_folder/rdf_output/`). |
 | `triplestore_url` | it should be the same as `triplestore_url` from `Converter/meta/lib/conf.py`. |
-| `info_dir` | it should be the same string as `info_dir` from `Converter/meta/lib/conf.py`. |
+| `info_dir` | a support folder used by oc_ocdm. It should not be deleted until the end of the Enricher step and it should be the same for all the scripts of this workflow (it must be `<path>/meta_folder/info_dir/`).  |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `rdf_output_in_chunks` | **this bool flag MUST be valued as `True`.** |
 
@@ -154,10 +158,10 @@ Distributed under the ISC License. See `LICENSE` for more information.
 ## Contacts
 |Project member |e-mail address |
 |---|---|
-| Gabriele Pisciotta | ga.pisciotta@gmail.com |
-| Giovanni Colavizza | giovannicolavizza@gmail.com |
-| Marilena Daquino | marilena.daquino2@unibo.it |
 | Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
 | Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw
