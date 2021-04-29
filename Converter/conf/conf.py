@@ -27,7 +27,7 @@ classify_even_if_type_is_uncertain = True
 
 # REQUIRED DIRECTORIES
 input_parquet_file = '<path>/dataset.parquet'
-extracted_csv_dir = '<path>/converter'
+extracted_csv_dir = '<path>/converter_folder/'
 
 # CONVERSION OPTIONS
 allowed_citation_types = {'citation',  # generic citation: to be further examined

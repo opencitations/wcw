@@ -17,8 +17,8 @@
 # REQUIRED DIRECTORIES
 meta_csv_output_dir = '<path>/meta_folder/csv_output/'  # INPUT DIR
 citations_csv_dir = '<path>/converter_folder/citations/'  # INPUT DIR
-converter_citations_csv_output_dir = '<path>/citations_folder/csv_output_dir/'  # OUTPUT DIR
-converter_citations_rdf_output_dir = '<path>/citations_folder/rdf_output_dir/'  # OUTPUT DIR
+converter_citations_csv_output_dir = '<path>/citations_folder/csv_output/'  # OUTPUT DIR
+converter_citations_rdf_output_dir = '<path>/citations_folder/rdf_output/'  # OUTPUT DIR
 
 # TRIPLESTORE and OC_OCDM
 base_iri = "https://w3id.org/oc/meta/"

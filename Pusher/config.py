@@ -21,6 +21,6 @@ base_dir = "<path>/enricher_folder/rdf_output/"
 
 pusher_citations_csv_file = "<path>/pusher_folder/citations_mapping.csv"
 pusher_citations_batch_file = "<path>/pusher_folder/citations_batch.tsv"
-citations_batches_dir = "<path>/citations_folder/rdf_output_dir/"
+citations_batches_dir = "<path>/citations_folder/rdf_output/"
 
 temp_TSV_batch_output_file = "<path>/pusher_folder/temp_TSV_batch.tsv"
