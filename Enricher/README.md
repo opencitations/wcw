@@ -52,6 +52,8 @@ The configuration file of the script is available at this path: `Enricher/conf.p
 | `rdf_output_dir` | **the output RDF files folder. It should be `<path>/enricher_folder/`.**
 | `base_iri` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the modification/merge/deletion of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
+| `info_dir` | **the path of a temporary folder needed by the oc_ocdm package. It should be `<path>/meta_folder/info_dir/`.** |
+| `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 
 **Once configured**, the script can be simply run as follows:
 ```bash
