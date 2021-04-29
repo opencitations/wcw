@@ -98,6 +98,7 @@ The configuration file of this project is available at this path: `Converter/met
 | `dir_split_number` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `items_per_file` | _an integer value that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
 | `default_dir` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
+| `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `resp_agent` | _an URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be left as it is, since provenance isn't particularly interesting for this workflow._ |
 | `rdf_output_in_chunks` | **a bool flag. For the WCW workflow, it MUST be valued as `True`.** |
 
@@ -136,6 +137,7 @@ The configuration file of this script is available at this path: `Converter/conf
 | `converter_citations_rdf_output_dir` | RDF files output directory (it should be `<path>/citations_folder/rdf_output/`). |
 | `triplestore_url` | it should be the same as `triplestore_url` from `Converter/meta/lib/conf.py`. |
 | `info_dir` | it should be the same string as `info_dir` from `Converter/meta/lib/conf.py`. |
+| `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `rdf_output_in_chunks` | **this bool flag MUST be valued as `True`.** |
 
 **Once configured**, the script can be simply run as follows:
