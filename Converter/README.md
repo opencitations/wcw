@@ -60,6 +60,8 @@ The user should take care of creating a folder structure as follows:
                    |             (initially empty)
 ```
 
+---
+
 The configuration file of this script is available at this path: `Converter/conf/conf.py`.
 | Constant | Description |
 |---|---|
@@ -70,6 +72,8 @@ The configuration file of this script is available at this path: `Converter/conf
 | `extracted_csv_dir` | **the output folder of this script. (It should be `<path>/converter_folder/`).** |
 | `allowed_citation_types` | a set of strings representing the allowed types of citations. When importing data from the parquet dataset, rows with a 'type_of_citation' (Wikipedia citation template) different from any of them will be discarded. (See module `reader.py`). **Default values SHOULD be kept (the script was written with them in mind).** |
 
+---
+
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Converter
@@ -79,6 +83,21 @@ python run_process.py
 ### meta
 `meta` is an OpenCitations tool available at [this Github repository](https://github.com/opencitations/meta).
 A copy of the code is made available in this repository, inside the same `Converter` folder: the provided version is guaranteed to work well with the rest of the WCW scripts.
+
+---
+**!!!TRIPLESTORE WARNING!!!**
+
+**This is the right time to start the local triplestore instance. If not already running, the chosen triplestore must
+be started. Here, we suppose that the suggested triplestore was chosen: [Blazegraph](https://github.com/blazegraph/database).**
+
+The `blazegraph.jar` file should be downloaded [from here](https://github.com/blazegraph/database/releases). A version equal
+to 2.1.6 or superior is warmly suggested. An updated JAVA JRE must be installed on the machine.
+```bash
+cd <blazegraph_download_path>
+java -jar ./blazegraph.jar
+```
+
+---
 
 The user should take care of creating a folder structure as follows:
 ```
@@ -93,6 +112,8 @@ The user should take care of creating a folder structure as follows:
               |             (initially empty)
               + 'auxiliary.txt' (empty file)
 ```
+
+---
 
 The configuration file of this project is available at this path: `Converter/meta/lib/conf.py`.
 | Constant | Description |
@@ -109,6 +130,8 @@ The configuration file of this project is available at this path: `Converter/met
 | `resp_agent` | _a URI string representing the provenance agent which is considered responsible of the RDF graph manipulation (in this case of the creation of new OCDM entities). It can be safely left as it is._ |
 | `rdf_output_in_chunks` | **a bool flag. For the WCW workflow, it MUST be valued as `True`.** |
 
+---
+
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Converter
@@ -121,6 +144,22 @@ python -m meta.run_process -c "<PATH_1>" -v "<PATH_2>" -i "<PATH_3>" -a "<PATH_4
   * <PATH_4> = the `meta` auxiliary file (`<path>/meta_folder/auxiliary.txt`).
 
 ### run_process_citations.py
+**!!!TRIPLESTORE WARNING!!!**
+
+**This script requires a running local triplestore instance. If not already running, the chosen triplestore must
+be started. Here, we suppose that the suggested triplestore was chosen: [Blazegraph](https://github.com/blazegraph/database).**
+
+The `blazegraph.jar` file should be downloaded [from here](https://github.com/blazegraph/database/releases). A version equal
+to 2.1.6 or superior is warmly suggested. An updated JAVA JRE must be installed on the machine.
+```bash
+cd <blazegraph_download_path>
+java -jar ./blazegraph.jar
+```
+
+**Once started, the terminal window must not be closed, otherwise the triplestore will also be stopped!**
+
+---
+
 The user should take care of creating a folder structure as follows:
 ```
 'citations_folder'--
@@ -129,6 +168,8 @@ The user should take care of creating a folder structure as follows:
                    + 'rdf_output'--
                                  (initially empty)
 ```
+
+---
 
 The configuration file of this script is available at this path: `Converter/conf/conf_citations.py`.
 
@@ -150,11 +191,20 @@ The configuration file of this script is available at this path: `Converter/conf
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 | `rdf_output_in_chunks` | **this bool flag MUST be valued as `True`.** |
 
+---
+**!!!TRIPLESTORE WARNING!!!**
+
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Converter
 python run_process_citations.py
 ```
+
+---
+
+**When also the `run_process_citations.py` will have finished its execution, then the local triplestore instance will no
+longer be required. If still running, the chosen triplestore can be safely stopped by pressing CTRL+C or by closing the
+relative terminal window.**
 
 <!-- LICENSE -->
 ## License
