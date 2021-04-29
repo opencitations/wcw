@@ -68,7 +68,7 @@ The configuration file of this script is available at this path: `Converter/conf
 | `parquet_engine` | the engine to be used when extracting data from the initial parquet dataset. Both `pyarrow`and `fastparquet` are supported by the `pandas` function `read_parquet` ([documentation here](https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html)). Since the given dataset is compressed, the user should also install `python-snappy` in the same Python environment. The suggested choice is `pyarrow`. |
 | `process_pool_size` | an integer representing the number of simultaneous processes that should be spawned by the script. A value of 0 or less is automatically replaced by the number of logical CPU threads of the system. For a sequential execution (which, by the way, is discouraged by the author), a value of 1 could be used. |
 | `classify_even_if_type_is_uncertain` | a bool flag. Some citations do not have any ID that can help us classifying them (i.e. doi, pmid, isbn, ...). Should the script try to label them based on the 'type_of_citation' column? (See module `classifier.py`). |
-| `input_parquet_file` | **the path of the parquet dataset (it's supposed to be a folder named `dataset.parquet`).** |
+| `input_parquet_file` | **the path of the parquet dataset (it's supposed to be a folder named `dataset.parquet`). IT CAN BE DOWNLOADED FROM ZENODO: https://zenodo.org/record/3940692** |
 | `extracted_csv_dir` | **the output folder of this script. (It should be `<path>/converter_folder/`).** |
 | `allowed_citation_types` | a set of strings representing the allowed types of citations. When importing data from the parquet dataset, rows with a 'type_of_citation' (Wikipedia citation template) different from any of them will be discarded. (See module `reader.py`). **Default values SHOULD be kept (the script was written with them in mind).** |
 
@@ -135,7 +135,7 @@ The configuration file of this project is available at this path: `Converter/met
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Converter
-python -m meta.run_process -c "<PATH_1>" -v "<PATH_2>" -i "<PATH_3>" -a "<PATH_4>" -s "https://zenodo.org/record/3940692#.YGhw6s9xfcs"
+python -m meta.run_process -c "<PATH_1>" -v "<PATH_2>" -i "<PATH_3>" -a "<PATH_4>" -s "https://zenodo.org/record/3940692"
 ```
 , where:
   * <PATH_1> = the `run_process.py` CSV output dir (it should be `<path>/converter_folder/`);
