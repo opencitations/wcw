@@ -20,7 +20,7 @@ def process(crossref_csv_dir, csv_dir, index_dir, auxiliary_path, source=None):
             filepath = os.path.join(crossref_csv_dir, filename)
             data = unpack(filepath)
             curator_info_dir = os.path.join(info_dir, 'curator' + os.sep)
-            curator_obj = Curator(data, triplestore_url, info_dir=curator_info_dir)
+            curator_obj = Curator(data, triplestore_url, info_dir=curator_info_dir, prefix=supplier_prefix)
             name = datetime.now().strftime("%Y-%m-%dT%H_%M_%S")
             pathoo(csv_dir)
             pathoo(index_dir)
