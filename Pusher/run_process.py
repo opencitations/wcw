@@ -150,7 +150,7 @@ if __name__ == "__main__":
     while base_dir[-1] == os.sep:
         base_dir = base_dir[:-1]
 
-    files: List[str] = glob.glob(base_dir + os.sep + "*.ttl", recursive=False)
+    files: List[str] = glob.glob(base_dir + os.sep + "*.nt", recursive=False)
     if len(files) <= 0:
         print("No file to be processed. Terminating the process...")
     else:

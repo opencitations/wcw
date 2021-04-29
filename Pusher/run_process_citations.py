@@ -86,7 +86,7 @@ of the Converter scripts (citations chunk files are left untouched by the Enrich
 scripts).
 """
 if __name__ == '__main__':
-    files: List[str] = glob.glob(citations_batches_dir + "*.rdf", recursive=False)
+    files: List[str] = glob.glob(citations_batches_dir + "*.nt", recursive=False)
     if len(files) <= 0:
         print("No file to be processed. Terminating the process...")
     else:
