@@ -4,7 +4,7 @@ from oc_ocdm.prov import ProvSet
 from meta.scripts.creator import *
 from meta.scripts.curator import *
 from meta.lib.conf import base_iri, context_path, info_dir, triplestore_url, \
-    base_dir, dir_split_number, items_per_file, default_dir, rdf_output_in_chunks
+    base_dir, dir_split_number, items_per_file, default_dir, rdf_output_in_chunks, supplier_prefix
 from datetime import datetime
 from argparse import ArgumentParser
 import os
@@ -27,9 +27,9 @@ def process(crossref_csv_dir, csv_dir, index_dir, auxiliary_path, source=None):
             curator_obj.curator(filename=name, path_csv=csv_dir, path_index=index_dir)
 
             creator_info_dir = os.path.join(info_dir, 'creator' + os.sep)
-            creator_obj = Creator(curator_obj.data, base_iri, creator_info_dir, curator_obj.index_id_ra,
-                                  curator_obj.index_id_br, curator_obj.re_index, curator_obj.ar_index,
-                                  curator_obj.VolIss)
+            creator_obj = Creator(curator_obj.data, base_iri, creator_info_dir, supplier_prefix,
+                                  curator_obj.index_id_ra, curator_obj.index_id_br, curator_obj.re_index,
+                                  curator_obj.ar_index, curator_obj.VolIss)
             creator = creator_obj.creator(source=source)
 
             prov = ProvSet(creator, base_iri, creator_info_dir, wanted_label=False)
@@ -51,14 +51,14 @@ def process(crossref_csv_dir, csv_dir, index_dir, auxiliary_path, source=None):
 
             if rdf_output_in_chunks:
                 filename_without_csv = filename[:-4]
-                f = os.path.join(base_dir, filename_without_csv + ".ttl")
+                f = os.path.join(base_dir, filename_without_csv + ".nt")
                 res_storer.store_graphs_in_file(f, context_path)
                 res_storer.upload_all(triplestore_url, base_dir, batch_size=100)
 
                 # Provenance
                 prov_dir = os.path.join(base_dir, 'prov' + os.sep)
                 pathoo(prov_dir)
-                f_prov = os.path.join(prov_dir, filename_without_csv + '.nquads')
+                f_prov = os.path.join(prov_dir, filename_without_csv + '.nq')
                 prov_storer.store_graphs_in_file(f_prov, context_path)
             else:
                 res_storer.upload_and_store(

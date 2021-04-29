@@ -8,10 +8,11 @@ from meta.lib.conf import resp_agent
 
 
 class Creator(object):
-    def __init__(self, data, base_iri, info_dir, ra_index, br_index, re_index_csv, ar_index_csv, vi_index):
+    def __init__(self, data, base_iri, info_dir, supplier_prefix, ra_index, br_index, re_index_csv,
+                 ar_index_csv, vi_index):
         self.url = base_iri
 
-        self.setgraph = GraphSet(self.url, info_dir, "", wanted_label=False)
+        self.setgraph = GraphSet(self.url, info_dir, supplier_prefix, wanted_label=False)
 
         self.ra_index = self.indexer_id(ra_index)
 
