@@ -18,3 +18,5 @@ rdf_input_dir = '<path>/meta_folder/rdf_output/'
 rdf_output_dir = '<path>/enricher_folder/'
 base_iri = "https://w3id.org/oc/meta/"
 resp_agent = 'https://w3id.org/oc/meta/prov/pa/2'
+info_dir = '<path>/meta_folder/info_dir/'
+supplier_prefix = ''

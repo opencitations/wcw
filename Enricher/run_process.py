@@ -16,7 +16,7 @@
 from __future__ import annotations
 
 import os
-from conf import rdf_input_dir, base_iri, resp_agent, rdf_output_dir
+from conf import rdf_input_dir, base_iri, resp_agent, rdf_output_dir, info_dir, supplier_prefix
 
 from oc_ocdm import Reader
 from oc_ocdm.graph import GraphSet
@@ -40,14 +40,17 @@ def process_chunk(filename: str) -> None:
     g = g.parse(filepath, format='nt11')
 
     reader: Reader = Reader()
-    g_set: GraphSet = GraphSet(base_iri=base_iri)
+    g_set: GraphSet = GraphSet(base_iri=base_iri,
+                               info_dir=info_dir,
+                               supplier_prefix=supplier_prefix,
+                               wanted_label=False)
     reader.import_entities_from_graph(g_set, g, enable_validation=False, resp_agent=resp_agent)
 
     # Enrichment
     enriched_filepath: str = rdf_output_dir + os.sep + 'enriched' + os.sep +\
-        filename_without_extension + '.ttl'
+        filename_without_extension + '.nt'
     enriched_prov: str = rdf_output_dir + os.sep + 'enriched' + os.sep + 'prov' + os.sep +\
-        filename_without_extension + '.nquads'
+        filename_without_extension + '.nq'
     # Output folders are created if not already existing
     if not os.path.exists(os.path.dirname(enriched_filepath)):
         os.makedirs(os.path.dirname(enriched_filepath))
@@ -61,9 +64,9 @@ def process_chunk(filename: str) -> None:
 
     # Deduplication
     deduplicated_filepath: str = rdf_output_dir + os.sep + 'deduplicated' + os.sep +\
-        filename_without_extension + '.ttl'
+        filename_without_extension + '.nt'
     deduplicated_prov: str = rdf_output_dir + os.sep + 'deduplicated' + os.sep + 'prov' + os.sep + \
-        filename_without_extension + '.nquads'
+        filename_without_extension + '.nq'
     # Output folders are created if not already existing
     if not os.path.exists(os.path.dirname(deduplicated_filepath)):
         os.makedirs(os.path.dirname(deduplicated_filepath))
@@ -90,7 +93,7 @@ if __name__ == '__main__':
     print("START")
     # The chunk files must be processed sequentially, since oc_ocdm is still thread unsafe!
     for chunk_file in os.listdir(rdf_input_dir):
-        if chunk_file.endswith('.ttl'):
+        if chunk_file.endswith('.nt'):
             print(f"Processing {chunk_file}...")
             process_chunk(chunk_file)
     print("END")
