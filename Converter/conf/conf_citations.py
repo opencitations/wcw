@@ -17,7 +17,6 @@
 # REQUIRED DIRECTORIES
 meta_csv_output_dir = '<path>/meta_folder/csv_output/'  # INPUT DIR
 citations_csv_dir = '<path>/citations/'  # INPUT DIR
-converter_citations_info_dir = '<path>/citations_folder/info_dir/'  # SUPPORT DIR
 converter_citations_csv_output_dir = '<path>/citations_folder/csv_output_dir/'  # OUTPUT DIR
 converter_citations_rdf_output_dir = '<path>/citations_folder/rdf_output_dir/'  # OUTPUT DIR
 

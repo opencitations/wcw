@@ -134,7 +134,7 @@ def process(cur_citations_file: str, conversion_dict: Dict[str, str]) -> None:
     temp_gs: GraphSet = GraphSet(base_iri)
 
     # The actual GraphSet that will contain the Citation entities to be stored in the output RDF file:
-    ci_gs: GraphSet = GraphSet(base_iri, info_dir=converter_citations_info_dir, supplier_prefix=supplier_prefix,
+    ci_gs: GraphSet = GraphSet(base_iri, info_dir=info_dir, supplier_prefix=supplier_prefix,
                                wanted_label=False)
 
     # Here the DataFrame columns are converted into Numpy arrays
