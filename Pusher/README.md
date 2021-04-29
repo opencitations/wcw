@@ -47,6 +47,8 @@ The user should take care of creating a folder structure as follows:
                 + 'temp_TSV_batch.tsv' (empty file)
 ```
 
+---
+
 The configuration file of **both scripts** is available at this path: `Pusher/config.py`.
 | Constant | Description |
 |---|---|

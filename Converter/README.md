@@ -57,7 +57,7 @@ The user should take care of creating a folder structure as follows:
 ```
 'converter_folder'--
                    + 'citations'--
-                   |             (initially empty)
+                   |            (initially empty)
 ```
 
 ---

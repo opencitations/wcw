@@ -55,6 +55,8 @@ The configuration file of the script is available at this path: `Enricher/conf.p
 | `info_dir` | a support folder used by oc_ocdm. It should not be deleted until the end of the Enricher step and it should be the same for all the scripts of this workflow (it must be `<path>/meta_folder/info_dir/`).  |
 | `supplier_prefix` | _a string that can be safely left empty. It's a parameter needed by the oc_ocdm package._ |
 
+---
+
 **Once configured**, the script can be simply run as follows:
 ```bash
 cd <path>/Enricher
