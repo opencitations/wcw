@@ -41,9 +41,32 @@ order:
   4. the [**Pusher**](Pusher) module take as input the enriched RDF files from the previous step and produces TSV
      files compliant with the QuickStatements input format that enable the user to bulk upload the
      citational data onto Wikidata.
+     
+![Workflow steps](img/workflow.png)
 
 More details can be found inside the `README` documents of each module; please refer to them for specific
 information about the inner workings of each workflow step.
+
+## External projects used
+Some external tools were reused, in particular:
+*  [oc_ocdm](https://github.com/opencitations/oc_ocdm) [[docs](https://oc-ocdm.readthedocs.io/en/latest/)], an ORM library
+   that allows to easily manipulate OCDM compliant RDF graphs through a well-defined API. It's available as a package on
+   PyPi ([click here](https://pypi.org/project/oc-ocdm/));
+*  [oc_graphenricher](https://github.com/opencitations/oc_graphenricher) [[docs](https://oc-graphenricher.readthedocs.io/en/latest/)],
+   a tool that's able to enrich a set of OCDM entities with external identifiers and then to apply a deduplication step so to
+   remove duplicated entities that share at least one identical identifier. It's available as a package on
+   PyPi ([click here](https://pypi.org/project/oc-graphenricher/));
+*  [meta](https://github.com/opencitations/meta), a tool that is able to apply a lot of preprocessing and data-cleaning techniques
+   to a given CSV file with a compatible format. It then generates and stores an OCDM compliant RDF graph containing the same
+   bibliographical information that was extracted from the CSV file. Its execution can require a lot of time, because of the complexity of
+   the operations that have to be executed on the given dataset;
+*  [cite-classifications-wiki](https://github.com/Harshdeep1996/cite-classifications-wiki), a set of scripts that are intended
+   to be run in a pyspark/hadoop environment which is distributed over a cluster of machines. It's able to digest a full Wikipedia
+   dump and to extract from it citations to external bibliographical resources. It's currently limited to the English version
+   of Wikipedia.
+
+They can be used outside of this context for purposes different from those of this project. All of them were very
+helpful for the development of this workflow. More information about them can be found in their respective GitHub repositories.
 
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
@@ -51,10 +74,10 @@ Distributed under the ISC License. See `LICENSE` for more information.
 ## Contacts
 |Project member |e-mail address |
 |---|---|
-| Gabriele Pisciotta | ga.pisciotta@gmail.com |
-| Giovanni Colavizza | giovannicolavizza@gmail.com |
-| Marilena Daquino | marilena.daquino2@unibo.it |
 | Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
 | Simone Persiani | iosonopersia@gmail.com |
 
 Project Link: https://github.com/opencitations/wcw
