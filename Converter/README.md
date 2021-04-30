@@ -1,5 +1,5 @@
 # Converter
-The second step of the [WCW workflow](..).
+The second step of the [WCW workflow](https://github.com/opencitations/wcw).
 
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
