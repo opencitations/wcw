@@ -44,7 +44,7 @@ def prepare2test(name):
     testcase_ttl = "meta/tdd/testcases/testcase_" + name + ".ttl"
 
     creator_info_dir = os.path.join("meta", "tdd", "creator_counter")
-    creator = Creator(data, "https://w3id.org/oc/meta/", creator_info_dir, testcase_id_ra, testcase_id_br,
+    creator = Creator(data, "https://w3id.org/oc/meta/", creator_info_dir, "060", testcase_id_ra, testcase_id_br,
                       testcase_re, testcase_ar, testcase_vi)
     creator_setgraph = creator.creator()
     test_graph = Graph()
