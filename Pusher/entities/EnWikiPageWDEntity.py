@@ -46,17 +46,20 @@ class EnWikiPageWDEntity(WDEntity):
         }
 
     def stringify(self) -> str:
-        statements = ['CREATE']
+        if self.is_not_null(self.qid):
+            return ''
+        else:
+            statements = ['CREATE']
 
-        if self.is_not_null(self.sitelink):
-            # It's a Wikipedia page from enwiki!
-            # We need to add the proper sitelink!
-            statements.append(self.statement('Senwiki', self.sitelink, 'string', with_reference=False))
+            if self.is_not_null(self.sitelink):
+                # It's a Wikipedia page from enwiki!
+                # We need to add the proper sitelink!
+                statements.append(self.statement('Senwiki', self.sitelink, 'string', with_reference=False))
 
-        full_dict = {**self.data, **self.id_dict}
-        for key, value in full_dict.items():
-            if self.is_not_null(value) and key in self.ocdm_to_wikidata:
-                prop, datatype = self.ocdm_to_wikidata[key]
-                statements.append(self.statement(prop, value, datatype))
+            full_dict = {**self.data, **self.id_dict}
+            for key, value in full_dict.items():
+                if self.is_not_null(value) and key in self.ocdm_to_wikidata:
+                    prop, datatype = self.ocdm_to_wikidata[key]
+                    statements.append(self.statement(prop, value, datatype))
 
-        return '\n'.join(statements)
+            return '\n'.join(statements)

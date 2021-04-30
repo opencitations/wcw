@@ -79,65 +79,68 @@ class BibliographicWDEntity(WDEntity):
         }
 
     def stringify(self) -> str:
-        if self.venue is not None and self.is_not_null(self.venue.qid):
-            self.data['venue'] = self.venue.qid
+        if self.is_not_null(self.qid):
+            return ''
+        else:
+            if self.venue is not None and self.is_not_null(self.venue.qid):
+                self.data['venue'] = self.venue.qid
 
-        for author_idx, author in self.authors.items():
-            if author is not None:
-                if self.is_not_null(author.qid):
-                    self.data['authors'][author_idx] = author.qid
+            for author_idx, author in self.authors.items():
+                if author is not None:
+                    if self.is_not_null(author.qid):
+                        self.data['authors'][author_idx] = author.qid
+                    else:
+                        author_string = None
+                        given_name = author.data['given_name']
+                        family_name = author.data['family_name']
+                        if self.is_not_null(given_name) and \
+                                self.is_not_null(family_name):
+                            author_string = given_name + ' ' + family_name
+                        elif self.is_not_null(given_name):
+                            author_string = given_name
+                        elif self.is_not_null(family_name):
+                            author_string = family_name
+
+                        if self.is_not_null(author_string):
+                            self.data['author_strings'][author_idx] = author_string
+
+            for editor_idx, editor in self.editors.items():
+                if editor is not None:
+                    if self.is_not_null(editor.qid):
+                        self.data['editors'][editor_idx] = editor.qid
+                    else:
+                        # Without a proper QID, we won't create this statement!
+                        pass
+
+            for publisher_idx, publisher in self.publishers.items():
+                if publisher is not None:
+                    if self.is_not_null(publisher.qid):
+                        self.data['publishers'][publisher_idx] = publisher.qid
+                    else:
+                        # Without a proper QID, we won't create this statement!
+                        pass
+
+            # Statements creation:
+            statements = ['CREATE']
+
+            full_dict = {**self.data, **self.id_dict}
+            for key, value in full_dict.items():
+                if key == 'author_strings':
+                    for author_string_idx, author_string_val in value.items():
+                        if author_string_idx >= 0 and self.is_not_null(author_string_val):
+                            prop, datatype = self.ocdm_to_wikidata['author_strings']
+                            # Add a statement containing an ordering qualifier:
+                            statements.append(self.ordered_statement(prop, author_string_val, author_string_idx,
+                                                                     datatype))
+                elif key == 'authors':
+                    for author_idx, author_val in value.items():
+                        if author_idx >= 0 and not self.is_not_null(author_val):
+                            prop, datatype = self.ocdm_to_wikidata['authors']
+                            # Add a statement containing an ordering qualifier:
+                            statements.append(self.ordered_statement(prop, author_val, author_idx, datatype))
                 else:
-                    author_string = None
-                    given_name = author.data['given_name']
-                    family_name = author.data['family_name']
-                    if self.is_not_null(given_name) and \
-                            self.is_not_null(family_name):
-                        author_string = given_name + ' ' + family_name
-                    elif self.is_not_null(given_name):
-                        author_string = given_name
-                    elif self.is_not_null(family_name):
-                        author_string = family_name
+                    if self.is_not_null(value) and key in self.ocdm_to_wikidata:
+                        prop, datatype = self.ocdm_to_wikidata[key]
+                        statements.append(self.statement(prop, value, datatype))
 
-                    if self.is_not_null(author_string):
-                        self.data['author_strings'][author_idx] = author_string
-
-        for editor_idx, editor in self.editors.items():
-            if editor is not None:
-                if self.is_not_null(editor.qid):
-                    self.data['editors'][editor_idx] = editor.qid
-                else:
-                    # Without a proper QID, we won't create this statement!
-                    pass
-
-        for publisher_idx, publisher in self.publishers.items():
-            if publisher is not None:
-                if self.is_not_null(publisher.qid):
-                    self.data['publishers'][publisher_idx] = publisher.qid
-                else:
-                    # Without a proper QID, we won't create this statement!
-                    pass
-
-        # Statements creation:
-        statements = ['CREATE']
-
-        full_dict = {**self.data, **self.id_dict}
-        for key, value in full_dict.items():
-            if key == 'author_strings':
-                for author_string_idx, author_string_val in value.items():
-                    if author_string_idx >= 0 and self.is_not_null(author_string_val):
-                        prop, datatype = self.ocdm_to_wikidata['author_strings']
-                        # Add a statement containing an ordering qualifier:
-                        statements.append(self.ordered_statement(prop, author_string_val, author_string_idx,
-                                                                 datatype))
-            elif key == 'authors':
-                for author_idx, author_val in value.items():
-                    if author_idx >= 0 and not self.is_not_null(author_val):
-                        prop, datatype = self.ocdm_to_wikidata['authors']
-                        # Add a statement containing an ordering qualifier:
-                        statements.append(self.ordered_statement(prop, author_val, author_idx, datatype))
-            else:
-                if self.is_not_null(value) and key in self.ocdm_to_wikidata:
-                    prop, datatype = self.ocdm_to_wikidata[key]
-                    statements.append(self.statement(prop, value, datatype))
-
-        return '\n'.join(statements)
+            return '\n'.join(statements)

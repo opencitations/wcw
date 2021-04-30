@@ -107,9 +107,9 @@ def _get_unordered_ra_list(br: BibliographicResource, role_type: URIRef) -> List
     # Helper function used inside 'process_bibliographic_resource':
     result_list: List[ResponsibleAgent] = []
     for contributor in br.get_contributors():
-        role_type = contributor.get_role_type()
+        cur_role_type = contributor.get_role_type()
         resp_agent = contributor.get_is_held_by()
-        if role_type is not None and role_type == role_type and resp_agent is not None:
+        if cur_role_type is not None and cur_role_type == role_type and resp_agent is not None:
             result_list.append(resp_agent)
     return result_list
 
