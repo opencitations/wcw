@@ -13,35 +13,3 @@
 # DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
-import unittest
-
-
-class TestIsbnUtils(unittest.TestCase):
-
-    def test_isbn_normalize(self):
-        pass
-
-    def test_isbn_length(self):
-        pass
-
-    def test_isbn10_is_valid(self):
-        pass
-
-    def test_isbn10_check_digit(self):
-        pass
-
-    def test_from_isbn10_to_isbn13(self):
-        pass
-
-    def test_isbn13_is_valid(self):
-        pass
-
-    def test_isbn13_check_digit(self):
-        pass
-
-    def test_from_isbn13_to_isbn10(self):
-        pass
-
-
-if __name__ == '__main__':
-    unittest.main()

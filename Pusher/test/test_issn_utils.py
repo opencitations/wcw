@@ -18,7 +18,13 @@ import unittest
 
 class TestIssnUtils(unittest.TestCase):
 
-    def setUp(self):
+    def test_normalize_issn(self):
+        pass
+
+    def test_issn_is_valid(self):
+        pass
+
+    def test_issn_check_digit(self):
         pass
 
 

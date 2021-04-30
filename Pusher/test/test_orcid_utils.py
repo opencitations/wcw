@@ -18,7 +18,13 @@ import unittest
 
 class TestOrcidUtils(unittest.TestCase):
 
-    def setUp(self):
+    def test_normalize_orcid(self):
+        pass
+
+    def test_orcid_is_valid(self):
+        pass
+
+    def test_orcid_check_digit(self):
         pass
 
 
