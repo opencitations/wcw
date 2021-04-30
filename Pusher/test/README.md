@@ -5,7 +5,7 @@ in case of issues._
 Tests for the Pusher step are fully contained in this folder. They can be simply run with the following commands:
 * now move inside the package folder
 ```bash
-cd Pusher
+cd <path>/Pusher
 python -m unittest discover
 ```
 
