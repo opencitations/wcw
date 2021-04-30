@@ -18,7 +18,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from typing import Dict, Set
+    from typing import Dict, Set, List
 
 from utils.invisible_chars import remove_invisible_chars
 
@@ -46,16 +46,16 @@ def stringify_id_list(id_info: Dict[str, str]) -> str:
     return converted_string
 
 
-def invalid_brackets(first, last):
+def invalid_brackets(first: int, last: int) -> bool:
     return first < 0 or last < 0 or first >= last
 
 
-def clean_id_list_string(s):
+def clean_id_list_string(s: str) -> str:
     s = remove_invisible_chars(s)
     return s.strip()
 
 
-def parse_id_list(id_list, ignore_errors=True):
+def parse_id_list(id_list: str, ignore_errors: bool = True) -> Dict[str, str]:
     # I don't want to lose a reference to the initial 'ID_list' value
     s = id_list
     
@@ -118,7 +118,17 @@ def parse_id_list(id_list, ignore_errors=True):
     return id_info
 
 
-def parse_id_list_repeated_schemes(id_list, ignore_errors=True):
+def parse_id_list_repeated_schemes(id_list: str, ignore_errors: bool = True) -> Dict[str, List[str]]:
+    """
+    This function is esclusively used by the run_process_citations.py script to
+    extract tmp and meta IDs from the CSV files produced by meta.
+    Examples:
+        "tmp:bib_0_12 isbn:978-1-876268-79-4 meta:br/06013" -> {'tmp': ['bib_0_12'],
+                                                                'meta': ['br/06013']}
+
+        "tmp:bib_0_12 tmp:bib_0_346 meta:br/06013" -> {'tmp': ['bib_0_12', 'bib_0_346'],
+                                                       'meta': ['br/06013']}
+    """
     # I don't want to lose a reference to the initial 'ID_list' value
     s = id_list
 
@@ -137,19 +147,19 @@ def parse_id_list_repeated_schemes(id_list, ignore_errors=True):
     all_tokens = []
     for i in range(len(tokens)):
         # It's fundamentally important that the string
-        # is split by the last ',' char: value tokens
-        # can contain one or more ','!
+        # is split by the first ':' char: value tokens
+        # can contain one or more ':'!
         sub_tokens = tokens[i].rsplit(':', maxsplit=1)
-        all_tokens.extend(sub_tokens)
 
-    # I don't try to parse tokens if I cannot safely distinguish
-    # between keys and values. In case of values containing '=' chars,
-    # I would risk to accept only a part of them, possibly changing their meaning.
-    if len(all_tokens) % 2 != 0:
-        if ignore_errors:
-            return {}
+        # IDs should contain at least a ':' char, otherwise they
+        # cannot be split into their scheme and their value!
+        if len(sub_tokens) != 2:
+            if ignore_errors:
+                return {}
+            else:
+                raise ValueError(f'Malformed string (at least one of the ID structures is invalid): {id_list}')
         else:
-            raise ValueError(f'Malformed string (at least one of the ID structures is invalid): {id_list}')
+            all_tokens.extend(sub_tokens)
 
     id_info = {}
     for i in range(0, len(all_tokens), 2):

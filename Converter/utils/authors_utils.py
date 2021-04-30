@@ -23,7 +23,7 @@ if TYPE_CHECKING:
 from utils.invisible_chars import remove_invisible_chars
 
 
-def stringify_authors(authors_list: List[Dict[str, str]]):
+def stringify_authors(authors_list: List[Dict[str, str]]) -> str:
     forbidden_chars: Set[str] = {':', ';', '[', ']'}  # these chars are used as delimiters in the output format
     is_first_author: bool = True
     converted_string: str = ''  # we start from an empty string
@@ -68,11 +68,11 @@ def extract_author_name(author: Dict[str, str]) -> Optional[str]:
     return author_name
 
 
-def invalid_brackets(first, last):
+def invalid_brackets(first: int, last: int) -> bool:
     return first < 0 or last < 0 or first >= last
 
 
-def unify_duplicated_equal_signs(s):
+def unify_duplicated_equal_signs(s: str) -> str:
     """ 
     Removes repeated equal signs only if they are one after the other
     or if they are separated by spaces.
@@ -92,7 +92,7 @@ def unify_duplicated_equal_signs(s):
     return ''.join(new_string)
 
 
-def clean_author_string(s):
+def clean_author_string(s: str) -> str:
     # '[' and ']' must be removed because they are interpreted by 'meta' as ID enclosing symbols!
     s = s.replace('[', '')
     s = s.replace(']', '')
@@ -101,7 +101,7 @@ def clean_author_string(s):
     return s.strip()
 
 
-def get_author_dict(author):
+def get_author_dict(author: str) -> Dict[str, str]:
     author = clean_author_string(author)
     tokens = author.split('=')
     if len(tokens) <= 1:
@@ -133,7 +133,7 @@ def get_author_dict(author):
     return author_dict
 
 
-def parse_authors(authors, ignore_errors=True):
+def parse_authors(authors: str, ignore_errors: bool = True) -> List[Dict[str, str]]:
     # I don't want to lose a reference to the initial 'authors' value
     s = authors
     
