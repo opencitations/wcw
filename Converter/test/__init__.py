@@ -13,19 +13,3 @@
 # DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
-import unittest
-from utils.invisible_chars import remove_invisible_chars
-
-
-class TestInvisibleChars(unittest.TestCase):
-
-    def test_remove_invisible_chars(self):
-        string = 'abc\r def\n ghi\t lmn \u0001\u0006'
-        result = remove_invisible_chars(string)
-        self.assertIsNotNone(result)
-
-        self.assertEqual(result, 'abc def ghi lmn ')
-
-
-if __name__ == '__main__':
-    unittest.main()
