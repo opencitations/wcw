@@ -1,62 +1,42 @@
-# WARNING
-This is actually a copy of the `Harshdeep1996/cite-classifications-wiki` Github repository as of May, 2021. For an up-to-date version of this project, please [take a look here](https://github.com/Harshdeep1996/cite-classifications-wiki). Since the full project is too heavy (over 2.6Gb!), we discarded the `data` and the `lookup/lookup_eval_queried` folders. They can be downloaded from the original repository ([actual
-snapshot here](https://github.com/Harshdeep1996/cite-classifications-wiki/tree/56cea9a4ad820febfa4d47b76e4a39d1c7d2e200)).
+# Extractor
+The first step of the [WCW workflow](..).
 
-# Wikipedia Citations:A comprehensive dataset of citations with identifiers extracted from English Wikipedia
+<summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+<ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#tests">Tests</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+</ol>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3940692.svg)](https://doi.org/10.5281/zenodo.3940692)
+## About The Project
+This module is the first part of the WCW workflow. Its aim is to extract citations from a full enwiki dump. It
+stores them in a .parquet dataset which is also compressed with the [snappy algorithm by Google](https://opensource.google/projects/snappy).
 
-**The documentation is written as WIKI in: [DOCUMENTATION](https://github.com/Harshdeep1996/cite-classifications-wiki/wiki)**
+The implementation and its related documentation can be found in the `Harshdeep1996/cite-classifications-wiki` Github repository.
 
-A dataset of citations is extracted from English Wikipedia (date: May 2020) which comprises of 35 different templates such as `cite news`, `cite web`. 
+We provide a copy of that repository inside the `Extractor/cite-classifications-wiki` subfolder: please, be aware that we
+chose not to copy a couple of subfolders (because of their size!), as stated in the WARNING section of the `README.md` file
+that can be found [here](cite-classifications-wiki).
 
-The dataset contains 29.276 million citations and then a subset is prepared which contains citations with identifiers which is 3.92 millions in size. The citations with identifiers dataset only covers the DOI, ISBN, PMC, PMID, ArXIV identifiers. 
+## Tests
+Tests (together with their instructions) can be found in the [test](test) subfolder.
 
-Along with the 2 dataset of citations, 2 frameworks are written to train the citations and get the classification - if the citation is scientific or not. Anyone is open to build models or do experiments using the extracted datasets and improve our results!
+## License
+Distributed under the ISC License. See `LICENSE` for more information.
 
-Please use the notebook `minimal_dataset_demo.ipynb` to play with the `minimal_dataset.zip` by downloading it from Zenodo (http://doi.org/10.5281/zenodo.3940692).
+## Contacts
+|Project member |e-mail address |
+|---|---|
+| Silvio Peroni - [@essepuntato](https://twitter.com/essepuntato) | essepuntato@gmail.com |
+| Marilena Daquino | marilena.daquino2@unibo.it |
+| Giovanni Colavizza | giovannicolavizza@gmail.com |
+| Gabriele Pisciotta | ga.pisciotta@gmail.com |
+| Simone Persiani | iosonopersia@gmail.com |
 
-## Running the repository
+Project Link: https://github.com/opencitations/wcw
 
-Assuming that Python is already installed (tested with version >= 2.7), the list of dependenices is written in `requirements.txt`, the libraries can be installed using:
-
-```
-pip install requirements.txt
-```
-
-The notebooks can be accessed using:
-
-```
-jupyter notebook
-```
-
-## Contents
-
-* `README.md` this file.
-* `data/`
-    * [citations_separated](data/citations_separated.parquet): Dataset containing all citations from Wikipedia with each of the column keys separated and compress in parquet format **(pre lookup)**.
-    * [citations_ids](data/citations_ids.csv) Subset of the above dataset but containing all citation which have a valid identifier such as DOI, ISBN, PMC, PMID or ArXIV.
-    * [top300_templates](data/top300_templates.csv) A CSV file which contains the TOP 300 csv templates as calculated by DLAB-EPFL.
-* `libraries/`: Contains the libraries `mwparserfromhell` and `wikiciteparser` which have been changed for the scope of the project. To get all the datasets, the user would need to install these versions of the libraries.
-* `lookup`: Contains two scripts `run_metadata.py` and `get_apis.py` which can be used to query CrossRef and Google books. `run_metadata.py` script is run asynchronously and right now can only be used for CrossRef. `get_apis.py` uses the `requests` library and can be used for querying short loads of metadata. Other files are related to the crossref evaluation to known what is the best heuristic and confidence threshold.
-* `notebooks`: Contains the notebooks which  -- 
-   * do analysis against some other similar work (`Sanity_Check_Citations.ipynb`)
-   * play with features (`Feature_Data_Analysis.ipynb`)
-   * the hybrid network model which does the classification for the examples and contains all the steps (`citation_network_model_3_labels.ipynb`)
-   * some of the results and which we get from the lookup -- and the corresponding label we classify them into (`results_predication_lookup.ipynb`)
-   * doing post lookup steps such as linking the potential journal labeled citations with their corresponding metadata (`wild_examples_lookup_journal.ipynb`)
-* `scripts`: Contains all the scripts to generate the dataset and features. For each script, a description is given at the top. All the paths to files are currently **absolute paths used to run the script** -- so please remember while running these scripts to change them.
-* `tests`: Some tests to check if the scripts for the data generation do what they are supposed to. Multiple tests would be added in the future to check the whole pipeline.
-
-## How to cite
-
-```
-@misc{singh2020wikipedia,
-    title={Wikipedia Citations: A comprehensive dataset of citations with identifiers extracted from English Wikipedia},
-    author={Harshdeep Singh and Robert West and Giovanni Colavizza},
-    year={2020},
-    eprint={2007.07022},
-    archivePrefix={arXiv},
-    primaryClass={cs.DL}
-}
-```
+## Acknowledgements
+This project has been developed within the context of the ["Wikipedia Citations in Wikidata" grant](https://meta.wikimedia.org/wiki/Wikicite/grant/Wikipedia_Citations_in_Wikidata), 
+under the supervision of prof. Silvio Peroni.
