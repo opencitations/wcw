@@ -15,11 +15,84 @@
 # SOFTWARE.
 import unittest
 
+from utils.utils import split_range, split_range_optional
+
 
 class TestUtils(unittest.TestCase):
 
-    def setUp(self):
-        pass
+    def test_split_range(self):
+        with self.subTest('Range is None'):
+            string = None
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('', ''))
+        with self.subTest('Range: 25-'):
+            string = '25-'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('', ''))
+        with self.subTest('Range: -25'):
+            string = ' -25'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('', ''))
+        with self.subTest('Range: 23-25'):
+            string = '23-25'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('23', '25'))
+        with self.subTest('Range: 220-25'):
+            string = '220-25'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('220', '225'))
+        with self.subTest('Range: 1, 25'):
+            string = '1, 25'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('', ''))
+        with self.subTest('Range: X-XV'):
+            string = 'X-XV'
+            result = split_range(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('', ''))
+
+    def test_split_range_optional(self):
+        with self.subTest('Range: 25-'):
+            string = '25-'
+            result = split_range_optional(string)
+            self.assertIsNone(result)
+        with self.subTest('Range: -25'):
+            string = '-25'
+            result = split_range_optional(string)
+            self.assertIsNone(result)
+        with self.subTest('Range: 23-25'):
+            string = '23-25'
+            result = split_range_optional(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('23', '25'))
+        with self.subTest('Range: 220-25'):
+            string = '220-25'
+            result = split_range_optional(string)
+            self.assertIsNotNone(result)
+
+            self.assertTupleEqual(result, ('220', '225'))
+        with self.subTest('Range: 1, 25'):
+            string = '1, 25'
+            result = split_range_optional(string)
+            self.assertIsNone(result)
+        with self.subTest('Range: X-XV'):
+            string = 'X-XV'
+            result = split_range_optional(string)
+            self.assertIsNone(result)
 
 
 if __name__ == '__main__':
