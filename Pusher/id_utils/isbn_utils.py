@@ -14,6 +14,10 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 from __future__ import annotations
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from typing import Optional
+
 digit_to_int = {'0': 0,
                 '1': 1,
                 '2': 2,
@@ -28,7 +32,7 @@ digit_to_int = {'0': 0,
                 }
 
 
-def isbn_normalize(isbn: str):
+def isbn_normalize(isbn: str) -> str:
     isbn = isbn.upper()
     c_list = [c for c in isbn if c in {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'X', '-'}]
     isbn = "".join(c_list)
@@ -42,7 +46,7 @@ def isbn_normalize(isbn: str):
     return isbn
 
 
-def isbn_length(isbn: str):
+def isbn_length(isbn: str) -> int:
     isbn = isbn.upper()
 
     count = 0
@@ -53,7 +57,7 @@ def isbn_length(isbn: str):
     return count
 
 
-def isbn10_is_valid(isbn10):
+def isbn10_is_valid(isbn10: str) -> bool:
     isbn10 = isbn10.replace('-', '')
     if len(isbn10) != 10:
         return False
@@ -67,7 +71,7 @@ def isbn10_is_valid(isbn10):
     return s % 11 == 0
 
 
-def isbn10_check_digit(isbn10):
+def isbn10_check_digit(isbn10: str) -> str:
     isbn10 = isbn10.replace('-', '')
 
     s = 0
@@ -80,13 +84,13 @@ def isbn10_check_digit(isbn10):
         return str(val)
 
 
-def from_isbn10_to_isbn13(isbn10):
+def from_isbn10_to_isbn13(isbn10: str) -> str:
     isbn13 = '978-' + isbn10
     isbn13 = isbn13[:-1] + isbn13_check_digit(isbn13)
     return isbn13
 
 
-def isbn13_is_valid(isbn13):
+def isbn13_is_valid(isbn13: str) -> bool:
     isbn13 = isbn13.replace('-', '')
     if len(isbn13) != 13:
         return False
@@ -102,7 +106,7 @@ def isbn13_is_valid(isbn13):
     return accumulator % 10 == 0
 
 
-def isbn13_check_digit(isbn13):
+def isbn13_check_digit(isbn13: str) -> str:
     isbn13 = isbn13.replace('-', '')
 
     coefficients = [1, 3] * 6
@@ -113,7 +117,7 @@ def isbn13_check_digit(isbn13):
     return str(val)
 
 
-def from_isbn13_to_isbn10(isbn13):
+def from_isbn13_to_isbn10(isbn13: str) -> Optional[str]:
     if isbn13[:3] == '978':
         isbn10 = isbn13[3:]
         while isbn10[0] == '-':

@@ -28,13 +28,13 @@ digit_to_int = {'0': 0,
                 }
 
 
-def normalize_issn(issn: str):
+def normalize_issn(issn: str) -> str:
     issn = issn.upper()
     c_list = [c for c in issn if c in {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'X', '-'}]
     return "".join(c_list)
 
 
-def issn_is_valid(issn):
+def issn_is_valid(issn: str) -> bool:
     if len(issn) != 9:
         return False
 
@@ -55,7 +55,7 @@ def issn_is_valid(issn):
     return accumulator % 11 == 0
 
 
-def issn_check_digit(issn):
+def issn_check_digit(issn: str) -> str:
     tmp_issn = issn[:4] + issn[5:]
     accumulator = 0
     for i in range(7):
