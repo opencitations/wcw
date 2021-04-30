@@ -59,7 +59,9 @@ def process_chunk(filename: str) -> None:
 
     enricher: GraphEnricher = GraphEnricher(g_set,
                                             graph_filename=enriched_filepath,
-                                            provenance_filename=enriched_prov)
+                                            provenance_filename=enriched_prov,
+                                            info_dir=info_dir,
+                                            debug=False)
     enricher.enrich()
 
     # Deduplication
@@ -75,7 +77,9 @@ def process_chunk(filename: str) -> None:
 
     matcher = InstanceMatching(g_set,
                                graph_filename=deduplicated_filepath,
-                               provenance_filename=deduplicated_prov)
+                               provenance_filename=deduplicated_prov,
+                               info_dir=info_dir,
+                               debug=False)
     matcher.match()
 
 
