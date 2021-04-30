@@ -68,6 +68,16 @@ Some external tools were reused, in particular:
 They can be used outside of this context for purposes different from those of this project. All of them were very
 helpful for the development of this workflow. More information about them can be found in their respective GitHub repositories.
 
+## Tests
+Tests (together with their instructions) can be found in the following subfolders:
+
+| Workflow step | Test subfolder |
+|---|---|
+| Extractor | [test](Extractor/test) |
+| Converter | [test](Converter/test) |
+| Enricher | [test](Enricher/test) |
+| Pusher | [test](Pusher/test) |
+
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
 
