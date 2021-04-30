@@ -1,18 +1,17 @@
 # Converter
 The second step of the WCW workflow.
 
-<!-- TABLE OF CONTENTS -->
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#tests">Tests</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contacts">Contacts</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 This module is the second part of the WCW workflow. It aims at converting citational data stored in a parquet
 dataset into [OCDM compliant](https://figshare.com/articles/online_resource/Metadata_for_the_OpenCitations_Corpus/3443876) RDF graphs. The OpenCitations DataModel is used as an intermediate data model which is capable of
@@ -36,7 +35,6 @@ For the correct execution of the second and third step, a running instance of an
 triplestore is needed. We suggest to use Blazegraph version >=2.1.6 (which is the one we used to
 test and development). The 'blazegraph.jar' file can be downloaded [from here](https://github.com/blazegraph/database/releases) (it requires an updated Java Runtime Environment).
 
-<!-- GETTING STARTED -->
 ## Getting Started
 **A Python >=3.7 execution environment is required.** Please, install the dependencies listed
 in the requirements.txt file by executing the following commands:
@@ -50,7 +48,6 @@ repository.
 
 A new and clean instance of a triplestore is required by the **meta** and **run_process_citations.py** scripts. It should be kept alive during their entire execution.
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 ### run_process.py
 The user should take care of creating a folder structure as follows:
@@ -206,11 +203,12 @@ python run_process_citations.py
 longer be required. If still running, the chosen triplestore can be safely stopped by pressing CTRL+C or by closing the
 relative terminal window.**
 
-<!-- LICENSE -->
+## Tests
+Tests (together with their instructions) can be found in the [test](test) subfolder.
+
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
 ## Contacts
 |Project member |e-mail address |
 |---|---|

@@ -1,18 +1,17 @@
 # Enricher
 The third step of the WCW workflow.
 
-<!-- TABLE OF CONTENTS -->
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#tests">Tests</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contacts">Contacts</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 This module is the third part of the WCW workflow. It firstly tries to enrich the RDF chunk files produced by the Converter with additional external identifiers and, secondly, it deduplicates entities inside each chunk. 
 
@@ -21,7 +20,6 @@ package. More information can be found in the [Github repository](https://github
 
 The enriched version of the input chunk file is stored in the `<path>/enricher_folder/enriched/` directory. The deduplicated version of the enriched chunk files is then stored in the `<path>/enricher_folder/deduplicated/`.
 
-<!-- GETTING STARTED -->
 ## Getting Started
 **A Python >=3.7 execution environment is required.** Please, install the dependencies listed
 in the requirements.txt file by executing the following commands:
@@ -33,7 +31,6 @@ pip install -r requirements.txt
 It's not necessary to install anything. The user can simply download the Converter folder from this 
 repository.
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 The user should take care of creating a folder structure as follows:
 ```
@@ -63,11 +60,12 @@ cd <path>/Enricher
 python run_process.py
 ```
 
-<!-- LICENSE -->
+## Tests
+Tests (together with their instructions) can be found in the [test](test) subfolder.
+
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
 ## Contacts
 |Project member |e-mail address |
 |---|---|

@@ -1,18 +1,17 @@
 # Pusher
 The fourth and last step of the WCW workflow.
 
-<!-- TABLE OF CONTENTS -->
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#tests">Tests</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contacts">Contacts</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ol>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 This module is the fourth and last part of the WCW workflow. It aims at producing TSV files (compliant with [QuickStatements](https://quickstatements.toolforge.org/#/)) that can be manually bulk-uploaded onto Wikidata. It takes
 as input RDF files produced by the Converter and eventually processed by the Enricher. During
@@ -25,7 +24,6 @@ following mandatory order:
   1. the **run_process.py** script: it processes the "bibliographic" RDF chunk files that may come from the Enricher or directly from the Converter. It's an interactive script that repeatedly overwrites a TSV file with new statements and then pauses (waiting for the user to manually bulk-upload them).
   2. the **run_process_citations.py** script: processes the "citations" RDF chunk files that come from the Converter (they're not involved in the Enricher step). It's not an interactive script: it produces a TSV file that should be manually bulk-uploaded only at the end of its execution.
 
-<!-- GETTING STARTED -->
 ## Getting Started
 **A Python >=3.7 execution environment is required.** Please, install the dependencies listed
 in the requirements.txt file by executing the following commands:
@@ -37,7 +35,6 @@ pip install -r requirements.txt
 It's not necessary to install anything. The user can simply download the Converter folder from this 
 repository.
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 The user should take care of creating a folder structure as follows:
 ```
@@ -114,11 +111,12 @@ This script, unlike the other one, is not interactive. It will run until the ent
 At the end of its execution, the user should head over to the web interface of [QuickStatements](https://quickstatements.toolforge.org/#/)
 and bulk-upload the `<path>/pusher_folder/citations_batch.tsv` TSV file.
 
-<!-- LICENSE -->
+## Tests
+Tests (together with their instructions) can be found in the [test](test) subfolder.
+
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
 ## Contacts
 |Project member |e-mail address |
 |---|---|
