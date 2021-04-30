@@ -5,6 +5,8 @@ This is the repository of the [Wikipedia Citations in Wikidata grant](https://me
 It's a collection of scripts that can be used to extract citations from the English Wikipedia to 
 external bibliographic resources, and then to upload them to Wikidata.
 
+**[A complete diagram with a description of all the workflow steps is available here!](resources/WorkflowDiagram.pdf)**
+
 ## Project description
 Quoting the [grant's description](https://meta.wikimedia.org/wiki/Wikicite/grant/Wikipedia_Citations_in_Wikidata#Description):
 
@@ -42,7 +44,7 @@ order:
      files compliant with the QuickStatements input format that enable the user to bulk upload the
      citational data onto Wikidata.
      
-![Workflow steps](img/workflow.png)
+![Workflow steps](resources/workflow.png)
 
 More details can be found inside the `README` documents of each module; please refer to them for specific
 information about the inner workings of each workflow step.

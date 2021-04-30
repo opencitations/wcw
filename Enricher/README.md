@@ -1,6 +1,8 @@
 # Enricher
 The third step of the [WCW workflow](https://github.com/opencitations/wcw).
 
+**[A complete diagram with a description of all the workflow steps is available here!](../resources/WorkflowDiagram.pdf)**
+
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
     <li><a href="#about-the-project">About The Project</a></li>
