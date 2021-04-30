@@ -1,5 +1,5 @@
 pandas==1.2.4
-pyarrow==3.0.0
+pyarrow==4.0.0
 python-snappy==0.6.0
 SPARQLWrapper==1.8.5
 rdflib==5.0.0
@@ -7,6 +7,6 @@ rdflib==5.0.0
 # Additional dependencies required by meta:
 pymantic==0.3.0
 requests==2.25.1
-oc_ocdm==6.0.0
+oc_ocdm==6.0.1
 argparse==1.4.0
 python-dateutil==2.8.1
