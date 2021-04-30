@@ -4,7 +4,6 @@ in case of issues._
 
 ## run_process.py and run_process_citations.py
 Tests for the Converter step are fully contained in this folder. They can be simply run with the following commands:
-* now move inside the package folder
 ```bash
 cd <path>/Converter
 python -m unittest discover
@@ -30,7 +29,7 @@ java -jar ./blazegraph.jar
 
 **Once started, the terminal window must not be closed, otherwise the triplestore will also be stopped!**
 
-Now the test module can be run:
+Now the test module can simply be run as follows:
 ```bash
 cd <path>/Converter
 python -m meta.tdd.curator_TDD
