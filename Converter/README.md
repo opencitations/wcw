@@ -60,6 +60,7 @@ The user should take care of creating a folder structure as follows:
 ---
 
 The configuration file of this script is available at this path: `Converter/conf/conf.py`.
+
 | Constant | Description |
 |---|---|
 | `parquet_engine` | the engine to be used when extracting data from the initial parquet dataset. Both `pyarrow`and `fastparquet` are supported by the `pandas` function `read_parquet` ([documentation here](https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html)). Since the given dataset is compressed, the user should also install `python-snappy` in the same Python environment. The suggested choice is `pyarrow`. |
@@ -113,6 +114,7 @@ The user should take care of creating a folder structure as follows:
 ---
 
 The configuration file of this project is available at this path: `Converter/meta/lib/conf.py`.
+
 | Constant | Description |
 |---|---|
 | `base_dir` | **the RDF files output folder. It should be `<path>/meta_folder/rdf_output/`.** |

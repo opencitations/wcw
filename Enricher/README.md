@@ -43,6 +43,7 @@ The user should take care of creating a folder structure as follows:
 
 ### run_process.py
 The configuration file of the script is available at this path: `Enricher/conf.py`.
+
 | Constant | Description |
 |---|---|
 | `rdf_input_dir` | **the input RDF files folder. It should be `<path>/meta_folder/rdf_output/`.** |

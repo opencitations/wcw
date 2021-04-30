@@ -47,6 +47,7 @@ The user should take care of creating a folder structure as follows:
 ---
 
 The configuration file of **both scripts** is available at this path: `Pusher/config.py`.
+
 | Constant | Description |
 |---|---|
 | `base_iri` | _a string that should be left as it is. It's a parameter needed by the oc_ocdm package._ |
