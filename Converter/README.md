@@ -28,7 +28,7 @@ following mandatory order:
      starting from properly structured CSV files. It's used to generate RDF files containing the 
      bibliographic entities involved in the citations between English Wikipedia pages and external
      resources, but it doesn't contain the Citation entities which should describe the relations between them.
-  3. the **run_process_citations.py** script: it reads from a particular subfolder in which the 
+  3. the **run_process_citations.py** script: it reads from a particular sub-folder in which the 
      **run_process.py** script exports CSV files containing citations and also from the CSV output files
      of **meta**. Its goal is to produce additional RDF files containing Citation entities that
      describe relations between citing entities and cited ones.
@@ -208,7 +208,7 @@ longer be required. If still running, the chosen triplestore can be safely stopp
 relative terminal window.**
 
 ## Tests
-Tests (together with their instructions) can be found in the [test](test) subfolder.
+Tests (together with their instructions) can be found in the [test](test) sub-folder.
 
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.

@@ -115,7 +115,7 @@ At the end of its execution, the user should head over to the web interface of [
 and bulk-upload the `<path>/pusher_folder/citations_batch.tsv` TSV file.
 
 ## Tests
-Tests (together with their instructions) can be found in the [test](test) subfolder.
+Tests (together with their instructions) can be found in the [test](test) sub-folder.
 
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.

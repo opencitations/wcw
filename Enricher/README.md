@@ -64,7 +64,7 @@ python run_process.py
 ```
 
 ## Tests
-Tests (together with their instructions) can be found in the [test](test) subfolder.
+Tests (together with their instructions) can be found in the [test](test) sub-folder.
 
 ## License
 Distributed under the ISC License. See `LICENSE` for more information.

@@ -22,10 +22,10 @@ Quoting the [grant's description](https://meta.wikimedia.org/wiki/Wikicite/grant
 >  4. [**pusher**](Pusher) a module to disambiguate, deduplicate, and load citation and bibliographic data
 >    in Wikidata that reuses code already developed by the wikidata community as much as possible.
 
-The repository folder structure reflects these same modules that constitue the entire workflow.
+The repository folder structure reflects these same modules that constitute the entire workflow.
 
 ## Instructions
-Each module has a `README` file that contains specific instructions on how to setup the execution
+Each module has a `README` file that contains specific instructions on how to set up the execution
 environment, on how to configure the modules and how to run them. Here, only a general overview of the 
 entire process is given.
 
@@ -67,13 +67,13 @@ Some external tools were reused, in particular:
    dump and to extract from it citations to external bibliographical resources. It's currently limited to the English version
    of Wikipedia.
 
-They can be used outside of this context for purposes different from those of this project. All of them were very
+They can be used outside this context for purposes different from those of this project. All of them were very
 helpful for the development of this workflow. More information about them can be found in their respective GitHub repositories.
 
 ## Tests
-Tests (together with their instructions) can be found in the following subfolders:
+Tests (together with their instructions) can be found in the following sub-folders:
 
-| Workflow step | Test subfolder |
+| Workflow step | Test sub-folder |
 |---|---|
 | Extractor | [test](Extractor/test) |
 | Converter | [test](Converter/test) |
