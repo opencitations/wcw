@@ -49,6 +49,7 @@ def upload_batch(entity_batch: Dict[URIRef, WDEntity]):
 
     :param entity_batch: A dictionary representing the batch of WDEntity instances to be reconciled
     """
+    print("#" * 80)
     print("> BATCH UPLOAD")
     print(f">> Temporary TSV batch file: {temp_TSV_batch_output_file}")
     print(">> The temporary TSV batch file is going to be overwritten.")

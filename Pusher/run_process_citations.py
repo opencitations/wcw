@@ -71,10 +71,11 @@ def process_chunk(chunk_filepath: str, citations_mapping: Dict[URIRef, str]):
         if citing_uri in citations_mapping and cited_uri in citations_mapping:
             citing_qid: str = citations_mapping[citing_uri]
             cited_qid: str = citations_mapping[cited_uri]
-            statements.append(f'{citing_qid}\tP2860\t{cited_qid}\tS248\tQ328')
+            statements.append('\t'.join([citing_qid, "P2860", cited_qid, "S248", "Q328"]))
 
     # TSV STATEMENTS EXPORT
-    store_batch(statements)
+    if len(statements) > 0:
+        store_batch(statements)
 
 
 """
@@ -105,6 +106,7 @@ if __name__ == '__main__':
 
         # Each input files must be processed sequentially:
         for file in files:
+            print(f"Processing: {file}")
             process_chunk(file, ocdm_to_wikidata)
 
         print("The process terminated successfully. Please, manually bulk-upload the TSV")

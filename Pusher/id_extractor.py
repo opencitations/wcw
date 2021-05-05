@@ -131,7 +131,7 @@ def id_dict_is_empty(id_dict: Dict[str, str]) -> bool:
     if len(id_dict) <= 0:
         return True
     else:
-        for key, value in id_dict:
+        for key, value in id_dict.items():
             if key is not None and key != '' and value is not None and value != '':
                 return False
         return True

@@ -18,9 +18,9 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Optional, Dict, Any
 
-from OrganizationWDEntity import OrganizationWDEntity
-from HumanWDEntity import HumanWDEntity
-from WDEntity import WDEntity
+from entities.OrganizationWDEntity import OrganizationWDEntity
+from entities.HumanWDEntity import HumanWDEntity
+from entities.WDEntity import WDEntity
 
 
 class BibliographicWDEntity(WDEntity):
@@ -138,6 +138,18 @@ class BibliographicWDEntity(WDEntity):
                             prop, datatype = self.ocdm_to_wikidata['authors']
                             # Add a statement containing an ordering qualifier:
                             statements.append(self.ordered_statement(prop, author_val, author_idx, datatype))
+                elif key == 'editors':
+                    for editor_idx, editor_val in value.items():
+                        if editor_idx >= 0 and not self.is_not_null(editor_val):
+                            prop, datatype = self.ocdm_to_wikidata['editors']
+                            # Add a statement containing an ordering qualifier:
+                            statements.append(self.ordered_statement(prop, editor_val, editor_idx, datatype))
+                elif key == 'publishers':
+                    for publisher_idx, publisher_val in value.items():
+                        if publisher_idx >= 0 and not self.is_not_null(publisher_val):
+                            prop, datatype = self.ocdm_to_wikidata['publishers']
+                            # Add a statement containing an ordering qualifier:
+                            statements.append(self.ordered_statement(prop, publisher_val, publisher_idx, datatype))
                 else:
                     if self.is_not_null(value) and key in self.ocdm_to_wikidata:
                         prop, datatype = self.ocdm_to_wikidata[key]

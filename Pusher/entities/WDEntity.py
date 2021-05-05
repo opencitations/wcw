@@ -46,16 +46,9 @@ class WDEntity(ABC):
     @staticmethod
     def _fix_string(value, datatype):
         if datatype == 'string':
-            # Some chars are reported to be problematic when using QuickStatements
-            # via URLs.
-            # See: https://www.wikidata.org/wiki/Help:QuickStatements#Add_simple_statement
-            known_problematic_chars = {'_', '\"', ' ', '='}  # and maybe more...
-            for char in known_problematic_chars:
-                value = value.replace(char, '')
-
-            # TODO: check if in the TSV QS v1 format we should also do value.replace('\"', '\"\"') !!!
+            # TODO: check whether in the TSV QS v1 format we should also do value.replace('\"', '\"\"') !!!
             value = value.replace('\t', '')
-            # value = value.replace('\"', '\"\"')
+            value = value.replace('\"', '\'')
             value = '\"' + value + '\"'  # value = '\"\"\"' + value + '\"\"\"'
 
         elif datatype == 'datetime':

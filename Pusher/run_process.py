@@ -18,7 +18,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import List, Dict, Optional
-    from rdflib import URIRef, Namespace
+    from rdflib import URIRef
     from oc_ocdm.graph.entities import Identifier
 
 import glob
@@ -28,7 +28,7 @@ from oc_ocdm import Reader
 from oc_ocdm.graph import GraphSet
 from oc_ocdm.graph.entities.bibliographic import BibliographicResource
 
-from rdflib import Graph
+from rdflib import Graph, Namespace
 from config import base_iri, resp_agent, base_dir, pusher_citations_csv_file
 
 from process_bibliographic_resource import process_bibliographic_resource
@@ -126,16 +126,18 @@ def process_chunk(chunk_filepath: str):
     first_batch: Dict[URIRef, WDEntity] = upload_batches[0]
     second_batch: Dict[URIRef, WDEntity] = upload_batches[1]
 
-    upload_batch(first_batch)
-    upload_batch(wikipedia_batch)
+    if len(first_batch) > 0:
+        upload_batch(first_batch)
+        rec.reconciliate_batch(first_batch)
 
-    rec.reconciliate_batch(first_batch)
-    rec.reconciliate_wikipedia_batch(wikipedia_batch)
-    
-    upload_batch(second_batch)
+    if len(wikipedia_batch) > 0:
+        upload_batch(wikipedia_batch)
+        rec.reconciliate_wikipedia_batch(wikipedia_batch)
 
-    rec.reconciliate_batch(second_batch)
-    store_citations_csv_file(second_batch)
+    if len(second_batch) > 0:
+        upload_batch(second_batch)
+        rec.reconciliate_batch(second_batch)
+        store_citations_csv_file(second_batch)
 
 
 """
@@ -159,6 +161,9 @@ if __name__ == "__main__":
 
         # Each input files must be processed sequentially:
         for file in files:
+            print("!" * 80)
+            print(f"Processing: {file}")
+            print("!" * 80)
             process_chunk(file)
 
         print("END")

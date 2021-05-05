@@ -18,7 +18,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Dict, Any
 
-from WDEntity import WDEntity
+from entities.WDEntity import WDEntity
 
 
 class HumanWDEntity(WDEntity):

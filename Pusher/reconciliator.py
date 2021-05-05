@@ -27,7 +27,7 @@ from rdflib import Namespace
 from config import query_timeout, query_wait_time
 from id_utils.isbn_utils import isbn_length
 from entities.WDEntity import WDEntity
-from SPARQLWrapper import SPARQLWrapper, XML
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 
 class Reconciliator(object):
@@ -161,10 +161,12 @@ class Reconciliator(object):
                                agent="Pusher (via OpenCitations - http://opencitations.net;"
                                      " mailto:contact@opencitations.net)")
         sparql.setTimeout(query_timeout)
-        sparql.setReturnFormat(XML)
+        sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
+        sparql.setMethod('GET')
         time.sleep(query_wait_time)  # Wikidata limits the max. number of queries per minute! We have to wait...
-        return sparql.queryAndConvert().bindings
+        results = sparql.queryAndConvert()
+        return results['results']['bindings']
 
     def reconciliate_batch(self, batch: Dict[URIRef, WDEntity]):
         """
