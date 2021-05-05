@@ -17,7 +17,7 @@ base_iri = "https://w3id.org/oc/meta/"
 query_timeout = 3  # seconds
 query_wait_time = 1  # seconds
 resp_agent = "https://w3id.org/oc/meta/prov/pa/3"
-base_dir = "<path>/enricher_folder/rdf_output/"
+base_dir = "<path>/enricher_folder/deduplicated/"
 
 pusher_citations_csv_file = "<path>/pusher_folder/citations_mapping.csv"
 pusher_citations_batch_file = "<path>/pusher_folder/citations_batch.tsv"
