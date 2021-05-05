@@ -12,6 +12,10 @@ import csv
 
 
 def process(crossref_csv_dir, csv_dir, index_dir, auxiliary_path, source=None):
+    if not os.path.exists(auxiliary_path):
+        with open(auxiliary_path, 'wt', encoding='utf-8'):
+            pass
+
     for filename in os.listdir(crossref_csv_dir):
         pathoo(auxiliary_path)
         with open(auxiliary_path, "r") as aux_file:
@@ -52,13 +56,14 @@ def process(crossref_csv_dir, csv_dir, index_dir, auxiliary_path, source=None):
             if rdf_output_in_chunks:
                 filename_without_csv = filename[:-4]
                 f = os.path.join(base_dir, filename_without_csv + ".nt")
+                pathoo(f)
                 res_storer.store_graphs_in_file(f, context_path)
                 res_storer.upload_all(triplestore_url, base_dir, batch_size=100)
 
                 # Provenance
                 prov_dir = os.path.join(base_dir, 'prov' + os.sep)
-                pathoo(prov_dir)
                 f_prov = os.path.join(prov_dir, filename_without_csv + '.nq')
+                pathoo(f_prov)
                 prov_storer.store_graphs_in_file(f_prov, context_path)
             else:
                 res_storer.upload_and_store(
