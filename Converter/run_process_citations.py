@@ -244,14 +244,16 @@ def process(cur_citations_file: str, conversion_dict: Dict[str, str]) -> None:
 
         # Data
         f: str = os.path.join(converter_citations_rdf_output_dir, filename_without_csv + ".nt")
+        if not os.path.exists(os.path.dirname(f)):
+            os.makedirs(os.path.dirname(f))
         ci_storer.store_graphs_in_file(f, context_path)
         ci_storer.upload_all(triplestore_url, converter_citations_rdf_output_dir, batch_size=100)
 
         # Provenance
         prov_dir: str = os.path.join(converter_citations_rdf_output_dir, 'prov')
-        if not os.path.exists(os.path.dirname(prov_dir)):
-            os.makedirs(os.path.dirname(prov_dir))
         f_prov: str = os.path.join(prov_dir, filename_without_csv + '.nq')
+        if not os.path.exists(os.path.dirname(f_prov)):
+            os.makedirs(os.path.dirname(f_prov))
         ci_prov_storer.store_graphs_in_file(f_prov, context_path)
     else:
         # The RDF files are stored following the folder structure adopted by OpenCitations.
