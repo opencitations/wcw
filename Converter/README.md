@@ -3,6 +3,11 @@ The second step of the [WCW workflow](https://github.com/opencitations/wcw).
 
 **[A complete diagram with a description of all the workflow steps is available here!](../resources/WorkflowDiagram.pdf)**
 
+> :warning: **This workflow step is affected by a bug of rdflib <=5.0.0!** When running these scripts on a Windows machine,
+> you'll have to patch the `rdflib/graph.py` module inside your Python site-packages folder (have a look at the output of `python -m site`).
+> This bug was already [fixed here](https://github.com/RDFLib/rdflib/pull/1172) and it will no longer be a problem starting from the next version of rdflib!
+> As of now, you'll have to apply [this patch](https://github.com/RDFLib/rdflib/pull/1172/files) manually...
+
 <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
 <ol>
     <li><a href="#about-the-project">About The Project</a></li>
