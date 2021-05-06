@@ -61,7 +61,8 @@ def process_chunk(filename: str) -> None:
                                             graph_filename=enriched_filepath,
                                             provenance_filename=enriched_prov,
                                             info_dir=info_dir,
-                                            debug=False)
+                                            debug=False,
+                                            serialize_in_the_middle=False)
     enricher.enrich()
 
     # Deduplication
